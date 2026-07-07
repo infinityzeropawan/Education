@@ -1,0 +1,79 @@
+BUILDROONIX LMS PROJECT SOURCE CODE BACKUP
+
+"
+
+# Add Root Layout
+backup_content += "--- FILE: app/layout.tsx ---
+"
+backup_content += app_root_layout_content + "
+
+"
+
+# Add Auth Context
+backup_content += "--- FILE: lib/AuthContext.tsx ---
+"
+backup_content += auth_context_content + "
+
+"
+
+# Add Dashboard Layout
+backup_content += "--- FILE: app/(dashboard)/layout.tsx ---
+"
+backup_content += layout_content + "
+
+"
+
+# Add Sidebar
+backup_content += "--- FILE: components/layout/Sidebar.tsx ---
+"
+backup_content += sidebar_content + "
+
+"
+
+# Add Superadmin Dashboard
+backup_content += "--- FILE: components/dashboard/SuperadminDashboard.tsx ---
+"
+backup_content += superadmin_dashboard_content + "
+
+"
+
+# Add Teacher Dashboard
+backup_content += "--- FILE: components/dashboard/TeacherDashboard.tsx ---
+"
+backup_content += teacher_dashboard_content + "
+
+"
+
+# Add Student Dashboard
+backup_content += "--- FILE: components/dashboard/StudentDashboard.tsx ---
+"
+backup_content += student_dashboard_content + "
+
+"
+
+# Add Login Page
+backup_content += "--- FILE: app/(auth)/login/page.tsx ---
+"
+backup_content += login_page_content + "
+
+"
+
+# Add Teacher Assignment Management
+backup_content += "--- FILE: components/assignments/TeacherAssignmentManagement.tsx ---
+"
+backup_content += teacher_mgmt_content + "
+
+"
+
+# Add Protected Route Logic
+backup_content += "--- FILE: components/layout/ProtectedRoute.tsx ---
+"
+backup_content += protected_route_content + "
+
+"
+
+# Write the aggregated content to the text file
+with open(backup_filename, 'w') as f:
+    f.write(backup_content)
+
+print(f'✅ Successfully created project_source_code_backup.txt with all cell contents.')
