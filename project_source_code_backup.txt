@@ -1,7 +1,10 @@
-BUILDROONIX LMS - FULL PROJECT SOURCE CODE BACKUP
-==================================================
+BUILDROONIX LMS - ULTIMATE PROJECT SOURCE BACKUP
+============================================================
 
---- FILE: package.json ---
+--- PART 1: CURRENT FILE SYSTEM STATE ---
+
+FILE PATH: package.json
+----------------------------------------
 {
   "name": "content",
   "version": "0.1.0",
@@ -30,9 +33,10 @@ BUILDROONIX LMS - FULL PROJECT SOURCE CODE BACKUP
 }
 
 
-==================================================
+============================================================
 
---- FILE: package-lock.json ---
+FILE PATH: package-lock.json
+----------------------------------------
 {
   "name": "content",
   "version": "0.1.0",
@@ -6739,9 +6743,10 @@ BUILDROONIX LMS - FULL PROJECT SOURCE CODE BACKUP
 }
 
 
-==================================================
+============================================================
 
---- FILE: next-env.d.ts ---
+FILE PATH: next-env.d.ts
+----------------------------------------
 /// <reference types="next" />
 /// <reference types="next/image-types/global" />
 import "./.next/dev/types/routes.d.ts";
@@ -6750,9 +6755,10 @@ import "./.next/dev/types/routes.d.ts";
 // see https://nextjs.org/docs/app/api-reference/config/typescript for more information.
 
 
-==================================================
+============================================================
 
---- FILE: postcss.config.mjs ---
+FILE PATH: postcss.config.mjs
+----------------------------------------
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},
@@ -6762,9 +6768,10 @@ const config = {
 export default config;
 
 
-==================================================
+============================================================
 
---- FILE: next.config.ts ---
+FILE PATH: next.config.ts
+----------------------------------------
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -6774,9 +6781,10 @@ const nextConfig: NextConfig = {
 export default nextConfig;
 
 
-==================================================
+============================================================
 
---- FILE: AGENTS.md ---
+FILE PATH: AGENTS.md
+----------------------------------------
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
@@ -6784,9 +6792,10 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- END:nextjs-agent-rules -->
 
 
-==================================================
+============================================================
 
---- FILE: README.md ---
+FILE PATH: README.md
+----------------------------------------
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -6825,15 +6834,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-==================================================
+============================================================
 
---- FILE: CLAUDE.md ---
+FILE PATH: CLAUDE.md
+----------------------------------------
 @AGENTS.md
 
 
-==================================================
+============================================================
 
---- FILE: eslint.config.mjs ---
+FILE PATH: eslint.config.mjs
+----------------------------------------
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
@@ -6854,9 +6865,10 @@ const eslintConfig = defineConfig([
 export default eslintConfig;
 
 
-==================================================
+============================================================
 
---- FILE: tsconfig.json ---
+FILE PATH: tsconfig.json
+----------------------------------------
 {
   "compilerOptions": {
     "target": "ES2017",
@@ -6893,9 +6905,10 @@ export default eslintConfig;
 }
 
 
-==================================================
+============================================================
 
---- FILE: lib/mock-data.ts ---
+FILE PATH: lib/mock-data.ts
+----------------------------------------
 
 export type UserRole = 'superadmin' | 'school_admin' | 'teacher' | 'student';
 
@@ -6918,9 +6931,10 @@ export const MOCK_NOTIFICATIONS = [
 ];
 
 
-==================================================
+============================================================
 
---- FILE: lib/AuthContext.tsx ---
+FILE PATH: lib/AuthContext.tsx
+----------------------------------------
 
 'use client';
 
@@ -6995,9 +7009,10 @@ export function useAuth() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: components/assignments/TeacherAssignmentManagement.tsx ---
+FILE PATH: components/assignments/TeacherAssignmentManagement.tsx
+----------------------------------------
 
 'use client';
 import { useState } from 'react';
@@ -7020,9 +7035,10 @@ export default function TeacherAssignmentManagement() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: components/layout/Sidebar.tsx ---
+FILE PATH: components/layout/Sidebar.tsx
+----------------------------------------
 
 'use client';
 import Link from 'next/link';
@@ -7046,9 +7062,10 @@ export const Sidebar = () => {
 export const MobileSidebar = () => <div className="md:hidden">Menu</div>;
 
 
-==================================================
+============================================================
 
---- FILE: components/layout/ProtectedRoute.tsx ---
+FILE PATH: components/layout/ProtectedRoute.tsx
+----------------------------------------
 
 'use client';
 
@@ -7093,9 +7110,10 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, allowedRoles 
 export default ProtectedRoute;
 
 
-==================================================
+============================================================
 
---- FILE: components/dashboard/SuperadminDashboard.tsx ---
+FILE PATH: components/dashboard/SuperadminDashboard.tsx
+----------------------------------------
 
 'use client';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -7133,9 +7151,10 @@ export default function SuperadminDashboard() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: components/dashboard/StudentDashboard.tsx ---
+FILE PATH: components/dashboard/StudentDashboard.tsx
+----------------------------------------
 
 'use client';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -7173,9 +7192,10 @@ export default function StudentDashboard() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: components/dashboard/TeacherDashboard.tsx ---
+FILE PATH: components/dashboard/TeacherDashboard.tsx
+----------------------------------------
 
 'use client';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -7213,9 +7233,10 @@ export default function TeacherDashboard() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: app/globals.css ---
+FILE PATH: app/globals.css
+----------------------------------------
 @import "tailwindcss";
 
 :root {
@@ -7244,9 +7265,10 @@ body {
 }
 
 
-==================================================
+============================================================
 
---- FILE: app/page.tsx ---
+FILE PATH: app/page.tsx
+----------------------------------------
 import Image from "next/image";
 
 export default function Home() {
@@ -7314,9 +7336,10 @@ export default function Home() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: app/layout.tsx ---
+FILE PATH: app/layout.tsx
+----------------------------------------
 
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -7346,9 +7369,10 @@ export default function RootLayout({
 }
 
 
-==================================================
+============================================================
 
---- FILE: app/(auth)/login/page.tsx ---
+FILE PATH: app/(auth)/login/page.tsx
+----------------------------------------
 
 'use client';
 
@@ -7420,9 +7444,10 @@ export default function LoginPage() {
 }
 
 
-==================================================
+============================================================
 
---- FILE: app/(dashboard)/layout.tsx ---
+FILE PATH: app/(dashboard)/layout.tsx
+----------------------------------------
 
 import { Inter } from 'next/font/google';
 import { Sidebar, MobileSidebar } from '@/components/layout/Sidebar'; // Import Sidebar components
@@ -7456,5 +7481,482 @@ export default function DashboardLayout({
 }
 
 
-==================================================
+============================================================
+
+
+
+--- PART 2: CORE PROJECT LOGIC (FROM MEMORY) ---
+
+LOGICAL FILE: app/layout.tsx
+----------------------------------------
+
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { AuthProvider } from '@/lib/AuthContext'; // Import AuthProvider
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Buildroonix LMS',
+  description: 'A modern, role-based School ERP & LMS platform',
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>)
+ {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <AuthProvider> {/* Wrap your application with AuthProvider */}
+          {children}
+        </AuthProvider>
+      </body>
+    </html>
+  );
+}
+
+
+============================================================
+
+LOGICAL FILE: lib/AuthContext.tsx
+----------------------------------------
+
+'use client';
+
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
+type UserRole = 'superadmin' | 'school_admin' | 'teacher' | 'student' | null;
+
+interface User {
+  id: string;
+  name: string;
+  role: UserRole;
+}
+
+interface AuthContextType {
+  user: User | null;
+  login: (userData: User, redirectPath?: string) => void;
+  logout: () => void;
+  isAuthenticated: boolean;
+  role: UserRole;
+}
+
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
+
+export function AuthProvider({ children }: { children: React.ReactNode }) {
+  const [user, setUser] = useState<User | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [role, setRole] = useState<UserRole>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    // On mount, try to load user from localStorage or a cookie
+    // For this example, we'll simulate a login or load a mock user
+    const storedUser = localStorage.getItem('currentUser');
+    if (storedUser) {
+      const parsedUser: User = JSON.parse(storedUser);
+      setUser(parsedUser);
+      setIsAuthenticated(true);
+      setRole(parsedUser.role);
+    }
+  }, []);
+
+  const login = (userData: User, redirectPath = '/') => {
+    setUser(userData);
+    setIsAuthenticated(true);
+    setRole(userData.role);
+    localStorage.setItem('currentUser', JSON.stringify(userData));
+    router.push(redirectPath);
+  };
+
+  const logout = () => {
+    setUser(null);
+    setIsAuthenticated(false);
+    setRole(null);
+    localStorage.removeItem('currentUser');
+    router.push('/login');
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, login, logout, isAuthenticated, role }}>
+      {children}
+    </AuthContext.Provider>
+  );
+}
+
+export function useAuth() {
+  const context = useContext(AuthContext);
+  if (context === undefined) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+}
+
+
+============================================================
+
+LOGICAL FILE: app/(dashboard)/layout.tsx
+----------------------------------------
+
+import { Inter } from 'next/font/google';
+import { Sidebar, MobileSidebar } from '@/components/layout/Sidebar'; // Import Sidebar components
+
+const inter = Inter({ subsets: ['latin'] });
+
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <div className="flex min-h-screen">
+          <Sidebar /> {/* Desktop Sidebar */}
+          <div className="flex flex-col flex-1">
+            <header className="flex items-center justify-between p-4 bg-white shadow-md md:hidden">
+              <MobileSidebar /> {/* Mobile Sidebar Toggle */}
+              <h1 className="text-xl font-semibold">Buildroonix!</h1>
+            </header>
+            {/* Main Content Area */}
+            <main className="flex-1 p-6">
+              {children}
+            </main>
+          </div>
+        </div>
+      </body>
+    </html>
+  );
+}
+
+
+============================================================
+
+LOGICAL FILE: components/layout/Sidebar.tsx
+----------------------------------------
+
+'use client';
+import Link from 'next/link';
+import { useAuth } from '@/lib/AuthContext';
+import { Button } from '@/components/ui/button';
+
+export const Sidebar = () => {
+  const { role, logout } = useAuth();
+  return (
+    <aside className="w-64 bg-slate-900 text-white p-4 hidden md:block">
+      <h2 className="text-xl font-bold mb-6">Buildroonix</h2>
+      <nav className="space-y-2">
+        <Link href="/" className="block p-2 hover:bg-slate-800 rounded">Dashboard</Link>
+        {role === 'superadmin' && <Link href="/admin/users" className="block p-2 hover:bg-slate-800 rounded">Users</Link>}
+      </nav>
+      <Button onClick={logout} className="mt-8 w-full">Logout</Button>
+    </aside>
+  );
+};
+
+export const MobileSidebar = () => <div className="md:hidden">Menu</div>;
+
+
+============================================================
+
+LOGICAL FILE: components/layout/ProtectedRoute.tsx
+----------------------------------------
+
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/lib/AuthContext';
+import type { UserRole } from '@/lib/AuthContext'; // Import the type for UserRole
+
+interface ProtectedRouteProps {
+  children: React.ReactNode;
+  allowedRoles?: UserRole[];
+}
+
+const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, allowedRoles }) => {
+  const { isAuthenticated, role, user } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push('/login'); // Redirect to login if not authenticated
+    } else if (allowedRoles && role && !allowedRoles.includes(role)) {
+      // Redirect to a dashboard or access denied page if role is not allowed
+      if (role === 'superadmin' || role === 'school_admin') {
+        router.push('/admin/users'); // More specific redirect for admins
+      } else if (role === 'teacher') {
+        router.push('/teacher/attendance'); // More specific redirect for teachers
+      } else if (role === 'student') {
+        router.push('/student/assignments'); // More specific redirect for students
+      } else {
+        router.push('/'); // Default redirect for unexpected roles or general access denied
+      }
+    }
+  }, [isAuthenticated, role, allowedRoles, router]);
+
+  if (!isAuthenticated || (allowedRoles && role && !allowedRoles.includes(role))) {
+    return null; // Or a loading spinner
+  }
+
+  return <>{children}</>;
+};
+
+export default ProtectedRoute;
+
+
+============================================================
+
+LOGICAL FILE: app/(auth)/login/page.tsx
+----------------------------------------
+
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/lib/AuthContext';
+
+export default function LoginPage() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const { login } = useAuth();
+  const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Simulate a successful login with a mock user and role
+    // In a real application, you would validate credentials against a backend
+    const mockUser = {
+      id: '123',
+      name: username,
+      role: username === 'admin' ? 'superadmin' : username === 'teacher' ? 'teacher' : 'student', // Basic role assignment
+    };
+    login(mockUser, '/'); // Redirect to dashboard after login
+  };
+
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+      <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md">
+        <h1 className="mb-6 text-center text-3xl font-bold">Login to Buildroonix</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="username" className="mb-2 block text-sm font-medium text-gray-700">
+              Username
+            </label>
+            <input
+              type="text"
+              id="username"
+              className="w-full rounded-md border border-gray-300 p-2 focus:border-indigo-500 focus:ring-indigo-500"
+              placeholder="e.g., admin, teacher, student"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-6">
+            <label htmlFor="password" className="mb-2 block text-sm font-medium text-gray-700">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="w-full rounded-md border border-gray-300 p-2 focus:border-indigo-500 focus:ring-indigo-500"
+              placeholder="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full rounded-md bg-indigo-600 py-2 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            Log In
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+
+============================================================
+
+LOGICAL FILE: lib/mock-data.ts
+----------------------------------------
+
+export type UserRole = 'superadmin' | 'school_admin' | 'teacher' | 'student';
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: UserRole;
+  avatar?: string;
+}
+
+export const MOCK_USERS: User[] = [
+  { id: 'usr-001', name: 'Alice Smith', email: 'alice.s@example.com', role: 'superadmin' },
+  { id: 'usr-003', name: 'Carol White', email: 'carol.w@example.com', role: 'teacher' },
+  { id: 'usr-004', name: 'David Green', email: 'david.g@example.com', role: 'student' },
+];
+
+export const MOCK_NOTIFICATIONS = [
+  { id: 'not-001', userId: 'usr-004', content: 'New assignment posted.', timestamp: new Date().toISOString(), read: false },
+];
+
+
+============================================================
+
+LOGICAL FILE: components/dashboard/SuperadminDashboard.tsx
+----------------------------------------
+
+'use client';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Users, BookOpen, Bell } from 'lucide-react';
+
+export default function SuperadminDashboard() {
+  return (
+    <div className="p-6 space-y-6">
+      <h1 className="text-3xl font-bold">Superadmin Overview</h1>
+      <div className="grid gap-4 md:grid-cols-3">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Total Users</CardTitle>
+            <Users className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">1,284</div></CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Active Courses</CardTitle>
+            <BookOpen className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">42</div></CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">System Alerts</CardTitle>
+            <Bell className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold text-red-600">3</div></CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}
+
+
+============================================================
+
+LOGICAL FILE: components/dashboard/TeacherDashboard.tsx
+----------------------------------------
+
+'use client';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { BookOpen, Users, ClipboardList } from 'lucide-react';
+
+export default function TeacherDashboard() {
+  return (
+    <div className="p-6 space-y-6">
+      <h1 className="text-3xl font-bold">Teacher Dashboard</h1>
+      <div className="grid gap-4 md:grid-cols-3">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">My Courses</CardTitle>
+            <BookOpen className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">6</div></CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Total Students</CardTitle>
+            <Users className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">156</div></CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Pending Grades</CardTitle>
+            <ClipboardList className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">12</div></CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}
+
+
+============================================================
+
+LOGICAL FILE: components/dashboard/StudentDashboard.tsx
+----------------------------------------
+
+'use client';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { GraduationCap, FileText, CheckCircle } from 'lucide-react';
+
+export default function StudentDashboard() {
+  return (
+    <div className="p-6 space-y-6">
+      <h1 className="text-3xl font-bold">Student Dashboard</h1>
+      <div className="grid gap-4 md:grid-cols-3">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Enrolled Courses</CardTitle>
+            <GraduationCap className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">5</div></CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Assignments</CardTitle>
+            <FileText className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">8</div></CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">Attendance Rate</CardTitle>
+            <CheckCircle className="h-4 w-4 text-green-600" />
+          </CardHeader>
+          <CardContent><div className="text-2xl font-bold">94%</div></CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}
+
+
+============================================================
+
+LOGICAL FILE: components/assignments/TeacherAssignmentManagement.tsx
+----------------------------------------
+
+'use client';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+
+export default function TeacherAssignmentManagement() {
+  return (
+    <div className="p-6 space-y-4">
+      <h1 className="text-2xl font-bold">Assignment Management</h1>
+      <div className="flex gap-4 mb-8">
+        <Input placeholder="Search assignments..." className="max-w-sm" />
+        <Button>Create New</Button>
+      </div>
+      <div className="border rounded-lg p-8 text-center text-muted-foreground">
+        No assignments found. Start by creating one.
+      </div>
+    </div>
+  );
+}
+
+
+============================================================
 
