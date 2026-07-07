@@ -1,72 +1,78 @@
-
 'use client';
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { studentsList } from '@/lib/mock-data';
 
-type UserRole = 'superadmin' | 'school_admin' | 'teacher' | 'student' | null;
+export type UserRole = 'superadmin' | 'school_admin' | 'teacher' | 'student' | 'parent';
 
-interface User {
-  id: string;
-  name: string;
-  role: UserRole;
+export interface User {
+  id: string; name: string; email: string; role: UserRole;
+  phone?: string; joiningDate?: string; qualification?: string;
+  bloodGroup?: string; gender?: string; emergencyPhone?: string;
+  rollNo?: string; class?: string; section?: string;
+  fatherName?: string; motherName?: string; dob?: string;
+  address?: string; busNumber?: string; busRoute?: string;
+  admissionDate?: string; profileColor?: string;
+  institutionSlug?: string;
 }
 
 interface AuthContextType {
   user: User | null;
-  login: (userData: User, redirectPath?: string) => void;
+  login: (userData: User) => void;
   logout: () => void;
   isAuthenticated: boolean;
-  role: UserRole;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [role, setRole] = useState<UserRole>(null);
   const router = useRouter();
 
   useEffect(() => {
-    // On mount, try to load user from localStorage or a cookie
-    // For this example, we'll simulate a login or load a mock user
-    const storedUser = localStorage.getItem('currentUser');
-    if (storedUser) {
-      const parsedUser: User = JSON.parse(storedUser);
-      setUser(parsedUser);
-      setIsAuthenticated(true);
-      setRole(parsedUser.role);
-    }
+    const stored = localStorage.getItem('buildroonix_user');
+    if (stored) setUser(JSON.parse(stored));
   }, []);
 
-  const login = (userData: User, redirectPath = '/') => {
+  const login = (userData: User) => {
     setUser(userData);
-    setIsAuthenticated(true);
-    setRole(userData.role);
-    localStorage.setItem('currentUser', JSON.stringify(userData));
-    router.push(redirectPath);
+    localStorage.setItem('buildroonix_user', JSON.stringify(userData));
+    if (userData.role === 'superadmin') router.push('/superadmin');
+    else if (userData.role === 'school_admin') router.push('/admin');
+    else if (userData.role === 'teacher') router.push('/teacher');
+    else if (userData.role === 'parent') router.push('/parent');
+    else router.push('/student');
   };
 
   const logout = () => {
     setUser(null);
-    setIsAuthenticated(false);
-    setRole(null);
-    localStorage.removeItem('currentUser');
+    localStorage.removeItem('buildroonix_user');
     router.push('/login');
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isAuthenticated, role }}>
+    <AuthContext.Provider value={{ user, login, logout, isAuthenticated: !!user }}>
       {children}
     </AuthContext.Provider>
   );
 }
 
 export function useAuth() {
-  const context = useContext(AuthContext);
-  if (context === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  return context;
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth must be used within AuthProvider');
+  return ctx;
+}
+
+// Helper: login as student by id
+export function buildStudentUser(studentId: string): User | null {
+  const s = studentsList.find(s => s.id === studentId);
+  if (!s) return null;
+  return {
+    id: s.id, name: s.name, email: s.email, role: 'student',
+    phone: s.phone, rollNo: s.rollNo, class: s.class, section: s.section,
+    fatherName: s.fatherName, motherName: s.motherName, dob: s.dob,
+    gender: s.gender, address: s.address, bloodGroup: s.bloodGroup,
+    busNumber: s.busNumber, busRoute: s.busRoute, admissionDate: s.admissionDate,
+    profileColor: s.profileColor, joiningDate: s.admissionDate,
+  };
 }

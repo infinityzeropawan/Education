@@ -1,0 +1,913 @@
+2026-07-07 20:36:38.004 [info] Log level: info, beta=false
+2026-07-07 20:36:38.004 [info] Telemetry product: Amazon Q For VS Code
+2026-07-07 20:36:38.040 [info] Telemetry clientId: 1cf5c3f2-b800-4cb0-950d-b4a61eef3abf
+2026-07-07 20:36:38.040 [info] Telemetry sessionId: d5728389-b4b3-493f-97e9-298bb92afe35
+2026-07-07 20:36:38.040 [info] proxyUtil: Using noProxy from VS Code settings:
+2026-07-07 20:36:38.438 [info] current client registration id=dZ8KZ1N0CmU7IrJ6EpmZQHVzLWVhc3QtMQ
+    expires at Mon Oct 05 2026 13:30:55 GMT+0530 (India Standard Time)
+    key = 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:36:38.438 [info] Auth: bearer token expired (expires at Tue Jul 07 2026 18:32:58 GMT+0530 (India Standard Time)), attempting refresh the token for (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91)
+2026-07-07 20:36:38.695 [error] API response (oidc.us-east-1.amazonaws.com /token): {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'oidc.us-east-1.amazonaws.com'
+}
+2026-07-07 20:36:38.696 [error] sso-oidc: createToken failed (grantType=refresh_token): Error: getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com
+2026-07-07 20:36:38.696 [error] Auth refreshToken: token refresh failed (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91): getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com
+2026-07-07 20:36:38.696 [warning] auth: failed to restore previous session: Error: Failed to update connection due to networking issues [EAI_AGAIN]
+	 -> Error: getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com [EAI_AGAIN]
+2026-07-07 20:36:40.146 [info] Auth: bearer token expired (expires at Tue Jul 07 2026 18:32:58 GMT+0530 (India Standard Time)), attempting refresh the token for (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91)
+2026-07-07 20:36:40.159 [error] API response (oidc.us-east-1.amazonaws.com /token): {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'oidc.us-east-1.amazonaws.com'
+}
+2026-07-07 20:36:40.159 [error] sso-oidc: createToken failed (grantType=refresh_token): Error: getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com
+2026-07-07 20:36:40.160 [error] Auth refreshToken: token refresh failed (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91): getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com
+2026-07-07 20:36:40.160 [error] loadSavedConnection: Failed to refresh connection state: Error: Failed to update connection due to networking issues [EAI_AGAIN]
+	 -> Error: getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com [EAI_AGAIN]
+2026-07-07 20:36:40.160 [info] codewhisperer: active connection changed
+2026-07-07 20:36:40.160 [info] secondaryAuth: connectionId=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91, connectionStatus=valid
+2026-07-07 20:36:40.160 [info] codewhisperer: connection states
+    connection isValid=true,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=false
+2026-07-07 20:36:40.190 [info] using amazonqLsp service configuration: default
+2026-07-07 20:36:40.305 [warning] endpoints: failed to load from remote source, region data may appear outdated: Error: Failed to get resource
+2026-07-07 20:36:40.305 [warning] AwsContext: no default region in credentials profile, falling back to us-east-1:
+2026-07-07 20:36:40.389 [info] Auth: bearer token expired (expires at Tue Jul 07 2026 18:32:58 GMT+0530 (India Standard Time)), attempting refresh the token for (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91)
+2026-07-07 20:36:40.392 [error] API response (oidc.us-east-1.amazonaws.com /token): {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'oidc.us-east-1.amazonaws.com'
+}
+2026-07-07 20:36:40.392 [error] sso-oidc: createToken failed (grantType=refresh_token): Error: getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com
+2026-07-07 20:36:40.392 [error] Auth refreshToken: token refresh failed (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91): getaddrinfo EAI_AGAIN oidc.us-east-1.amazonaws.com
+2026-07-07 20:36:40.392 [error] CodeWhisperer: Error when fetching feature configs Error: Failed to update connection due to networking issues
+2026-07-07 20:36:45.091 [info] lsp: Finished preparing "AmazonQ" LSP server: '/home/pawan/.cache/aws/toolkits/language-servers/AmazonQ/1.72.0'
+2026-07-07 20:36:47.632 [info] Command: (not started) [/home/pawan/.cache/aws/toolkits/language-servers/AmazonQ/1.72.0/servers/node --max-old-space-size=8196 /home/pawan/.cache/aws/toolkits/language-servers/AmazonQ/1.72.0/servers/aws-lsp-codewhisperer.js --nolazy --preserve-symlinks --stdio --pre-init-encryption --set-credentials-encryption-key]
+2026-07-07 20:36:47.733 [warning] childProcess: Process 6135 exceeded cpu threshold: 90.9%
+2026-07-07 20:36:49.382 [info] [Info  - 8:36:49 PM] Runtime: Initializing runtime with encryption
+2026-07-07 20:36:49.384 [info] [Info  - 8:36:49 PM] Runtime: Registering IAM credentials update handler
+2026-07-07 20:36:49.391 [info] [Info  - 8:36:49 PM] Runtime: Registering bearer credentials update handler
+2026-07-07 20:36:49.394 [info] [2026-07-07T15:06:49.223Z] lserver: Amazon Q Inline Suggestion server has been initialised
+2026-07-07 20:36:49.395 [info] [2026-07-07T15:06:49.242Z] lserver: SecurityScan server has been initialized
+2026-07-07 20:36:49.396 [info] [2026-07-07T15:06:49.242Z] lserver: Amazon Q Configuration server has been initialised
+2026-07-07 20:36:49.396 [info] [2026-07-07T15:06:49.245Z] lserver: Q Chat server has been initialized
+2026-07-07 20:36:49.397 [info] [2026-07-07T15:06:49.245Z] lserver: Creating identity server.
+2026-07-07 20:36:49.398 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.351Z] lserver: QCodeAnalysisServer
+2026-07-07 20:36:49.399 [info] [2026-07-07T15:06:49.357Z] lserver: Workspace context server has been initialized
+2026-07-07 20:36:49.400 [info] [2026-07-07T15:06:49.358Z] lserver: Amazon Q Service server has been initialised
+2026-07-07 20:36:49.401 [info] [2026-07-07T15:06:49.358Z] lserver: Amazon Q Service server has been initialised
+2026-07-07 20:36:49.402 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.365Z] lserver: Logging level changed to log
+2026-07-07 20:36:49.403 [info] [2026-07-07T15:06:49.366Z] lserver: Region not provided by caller or runtime, falling back to default region (us-east-1) and endpoint
+2026-07-07 20:36:49.405 [info] [2026-07-07T15:06:49.367Z] lserver: Reading enableDeveloperProfileSupport setting from AWSInitializationOptions
+2026-07-07 20:36:49.406 [info] [2026-07-07T15:06:49.367Z] lserver: Enabled Q Developer Profile support: true
+2026-07-07 20:36:49.406 [info] [2026-07-07T15:06:49.367Z] lserver: Manager instance is initialize
+2026-07-07 20:36:49.407 [info] [2026-07-07T15:06:49.367Z] lserver: TransformConfigurationServer: Constructor called - server created
+2026-07-07 20:36:49.408 [info] [2026-07-07T15:06:49.367Z] lserver: TransformConfigurationServer: Features runtime available: true
+2026-07-07 20:36:49.409 [info] [2026-07-07T15:06:49.367Z] lserver: TransformConfigurationServer: Features keys: credentialsProvider, lsp, workspace, logging, runtime, sdkInitializator
+2026-07-07 20:36:49.410 [info] [2026-07-07T15:06:49.367Z] lserver: TransformConfigurationServer: Initialize called
+2026-07-07 20:36:49.410 [info] [Info  - 8:36:49 PM] Runtime: Initializing server "AWS CodeWhisperer" version "1.72.0" with capabilities:
+{"executeCommandProvider":{"commands":["aws/atxTransform/listOrCreateWorkspace","aws/atxTransform/listJobs","aws/atxTransform/startTransform","aws/atxTransform/getTransformInfo","aws/atxTransform/uploadPlan","aws/atxTransform/stopJob","aws/atxTransform/setCheckpoints","aws/atxTransform/updateWorkspace","aws/atxTransform/uploadPackages","aws/atxTransform/sendMessage","aws/atxTransform/listMessages","aws/atxTransform/batchGetMessages","aws/atxTransform/listArtifacts","aws/atxTransform/downloadArtifact","aws/atxTransform/completeLocalBuildHitl","aws/atxTransform/getJobDashboard","aws/atxTransform/getJobReport","aws/atxTransform/uploadCustomPlan","aws/atxTransform/loadOlderWorklogs","aws/chat/manageSubscription","aws/qNetTransform/startTransform","aws/qNetTransform/getTransform","aws/qNetTransform/pollTransform","aws/qNetTransform/pollTransformForPlan","aws/qNetTransform/getTransformPlan","aws/qNetTransform/cancelTransform","aws/qNetTransform/downloadArtifacts","aws/qNetTransform/cancelPolling","aws/codewhisperer/runSecurityScan","aws/codewhisperer/cancelSecurityScan"]},"workspace":{"workspaceFolders":{"supported":true,"changeNotifications":true},"fileOperations":{"didCreate":{"filters":[{"pattern":{"glob":"**/*.{ts,js,py,java}","matches":"file"}},{"pattern":{"glob":"**/*","matches":"folder"}},{"pattern":{"glob":"{**/*.abap,**/*.c,**/*.cpp,**/*.cs,**/*.dart,**/*.h,**/*.hcl,**/*.cc,**/*.hpp,**/*.go,**/*.java,**/*.js,**/*.json,**/*.jsonc,**/*.jsx,**/*.kt,**/*.kts,**/*.lua,**/*.wlua,**/*.php,**/*.ps1,**/*.psm1,**/*.py,**/*.r,**/*.rb,**/*.rs,**/*.sc,**/*.scala,**/*.sh,**/*.sql,**/*.sv,**/*.svh,**/*.swift,**/*.tf,**/*.ts,**/*.tsx,**/*.vh,**/*.vue,**/*.yaml,**/*.yml}","matches":"file"}}]},"didRename":{"filters":[{"pattern":{"glob":"**/*.{ts,js,py,java}","matches":"file"}},{"pattern":{"glob":"**/*","matches":"folder"}},{"pattern":{"glob":"{**/*.abap,**/*.c,**/*.cpp,**/*.cs,**/*.dart,**/*.h,**/*.hcl,**/*.cc,**/*.hpp,**/*.go,**/*.java,**/*.js,**/*.json,**/*.jsonc,**/*.jsx,**/*.kt,**/*.kts,**/*.lua,**/*.wlua,**/*.php,**/*.ps1,**/*.psm1,**/*.py,**/*.r,**/*.rb,**/*.rs,**/*.sc,**/*.scala,**/*.sh,**/*.sql,**/*.sv,**/*.svh,**/*.swift,**/*.tf,**/*.ts,**/*.tsx,**/*.vh,**/*.vue,**/*.yaml,**/*.yml}","matches":"file"}}]},"didDelete":{"filters":[{"pattern":{"glob":"**/*.{ts,js,py,java}","matches":"file"}},{"pattern":{"glob":"**/*","matches":"folder"}},{"pattern":{"glob":"{**/*.abap,**/*.c,**/*.cpp,**/*.cs,**/*.dart,**/*.h,**/*.hcl,**/*.cc,**/*.hpp,**/*.go,**/*.java,**/*.js,**/*.json,**/*.jsonc,**/*.jsx,**/*.kt,**/*.kts,**/*.lua,**/*.wlua,**/*.php,**/*.ps1,**/*.psm1,**/*.py,**/*.r,**/*.rb,**/*.rs,**/*.sc,**/*.scala,**/*.sh,**/*.sql,**/*.sv,**/*.svh,**/*.swift,**/*.tf,**/*.ts,**/*.tsx,**/*.vh,**/*.vue,**/*.yaml,**/*.yml}","matches":"file"}}]}}},"textDocumentSync":{"openClose":true,"change":2,"save":{"includeText":true}},"configurationProvider":{"sections":["aws.transformProfiles","aws.atx.transformProfiles","aws.q.workspaceContext","aws.q","aws.q.customizations","aws.q.developerProfiles"]},"chatOptions":{"quickActions":{"quickActionsCommandGroups":[{"commands":[{"command":"/help","description":"Learn more about Amazon Q","icon":"help"},{"command":"/clear","description":"Clear this session","icon":"trash"},{"command":"/compact","description":"Compact this conversation","icon":"folder"}]}]},"mcpServers":true,"modelSelection":true,"history":true,"export":true,"shortcut":true,"showLogs":true,"reroute":true,"codeReviewInChat":true}}
+2026-07-07 20:36:49.413 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.370Z] lserver: Initialized Runtimes OperationalTelemetry with optOut=true
+2026-07-07 20:36:49.501 [info] Auth: bearer token expired (expires at Tue Jul 07 2026 18:32:58 GMT+0530 (India Standard Time)), attempting refresh the token for (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91)
+2026-07-07 20:36:49.768 [info] [2026-07-07T15:06:49.416Z] lserver: Client initialization params: {"processId":4655,"clientInfo":{"name":"Visual Studio Code","version":"1.108.1"},"locale":"en","rootPath":"/home/pawan/Desktop/education erp/Education","rootUri":"file:///home/pawan/Desktop/education%20erp/Education","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional","normalizesLineEndings":true,"changeAnnotationSupport":{"groupsOnLabel":true}},"configuration":true,"didChangeWatchedFiles":{"dynamicRegistration":true,"relativePatternSupport":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"tagSupport":{"valueSet":[1]},"resolveSupport":{"properties":["location.range"]}},"codeLens":{"refreshSupport":true},"executeCommand":{"dynamicRegistration":true},"didChangeConfiguration":{"dynamicRegistration":true},"workspaceFolders":true,"foldingRange":{"refreshSupport":true},"semanticTokens":{"refreshSupport":true},"fileOperations":{"dynamicRegistration":true,"didCreate":true,"didRename":true,"didDelete":true,"willCreate":true,"willRename":true,"willDelete":true},"inlineValue":{"refreshSupport":true},"inlayHint":{"refreshSupport":true},"diagnostics":{"refreshSupport":true}},"textDocument":{"publishDiagnostics":{"relatedInformation":true,"versionSupport":false,"tagSupport":{"valueSet":[1,2]},"codeDescriptionSupport":true,"dataSupport":true},"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"contextSupport":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]},"insertReplaceSupport":true,"resolveSupport":{"properties":["documentation","detail","additionalTextEdits"]},"insertTextModeSupport":{"valueSet":[1,2]},"labelDetailsSupport":true},"insertTextMode":2,"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},"completionList":{"itemDefaults":["commitCharacters","editRange","insertTextFormat","insertTextMode","data"]}},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true},"activeParameterSupport":true},"contextSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true,"tagSupport":{"valueSet":[1]},"labelSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"disabledSupport":true,"dataSupport":true,"resolveSupport":{"properties":["edit"]},"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"honorsChangeAnnotations":true},"codeLens":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true,"rangesSupport":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true,"prepareSupportDefaultBehavior":1,"honorsChangeAnnotations":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"colorProvider":{"dynamicRegistration":true},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true,"foldingRangeKind":{"valueSet":["comment","imports","region"]},"foldingRange":{"collapsedText":false}},"declaration":{"dynamicRegistration":true,"linkSupport":true},"selectionRange":{"dynamicRegistration":true},"callHierarchy":{"dynamicRegistration":true},"semanticTokens":{"dynamicRegistration":true,"tokenTypes":["namespace","type","class","enum","interface","struct","typeParameter","parameter","variable","property","enumMember","event","function","method","macro","keyword","modifier","comment","string","number","regexp","operator","decorator"],"tokenModifiers":["declaration","definition","readonly","static","deprecated","abstract","async","modification","documentation","defaultLibrary"],"formats":["relative"],"requests":{"range":true,"full":{"delta":true}},"multilineTokenSupport":false,"overlappingTokenSupport":false,"serverCancelSupport":true,"augmentsSyntaxTokens":true},"linkedEditingRange":{"dynamicRegistration":true},"typeHierarchy":{"dynamicRegistration":true},"inlineValue":{"dynamicRegistration":true},"inlayHint":{"dynamicRegistration":true,"resolveSupport":{"properties":["tooltip","textEdits","label.tooltip","label.location","label.command"]}},"diagnostic":{"dynamicRegistration":true,"relatedDocumentSupport":false}},"window":{"showMessage":{"messageActionItem":{"additionalPropertiesSupport":true}},"showDocument":{"support":true},"workDoneProgress":true},"general":{"staleRequestSupport":{"cancel":true,"retryOnContentModified":["textDocument/semanticTokens/full","textDocument/semanticTokens/range","textDocument/semanticTokens/full/delta"]},"regularExpressions":{"engine":"ECMAScript","version":"ES2020"},"markdown":{"parser":"marked","version":"1.1.0"},"positionEncodings":["utf-16"]},"notebookDocument":{"synchronization":{"dynamicRegistration":true,"executionSummarySupport":true}}},"initializationOptions":{"aws":{"clientInfo":{"name":"Visual Studio Code","version":"1.108.1","extension":{"name":"AmazonQ-For-VSCode","version":"2.4.0"},"clientId":"1cf5c3f2-b800-4cb0-950d-b4a61eef3abf"},"awsClientCapabilities":{"q":{"developerProfiles":true,"pinnedContextEnabled":true,"imageContextEnabled":true,"mcp":true,"shortcut":true,"reroute":true,"modelSelection":true,"codeReviewInChat":true,"displayFindings":true},"window":{"notifications":true,"showSaveFileDialog":true,"showLogs":true},"textDocument":{"inlineCompletionWithReferences":{"inlineEditSupport":true}}},"contextConfiguration":{"workspaceIdentifier":"/home/pawan/.config/Code/User/workspaceStorage/602b1491cfdda4ed4d2b077b8694b8db/amazonwebservices.amazon-q-vscode"},"logLevel":"info"},"credentials":{"providesBearerToken":true,"providesIam":false}},"trace":"off","workspaceFolders":[{"uri":"file:///home/pawan/Desktop/education%20erp/Education","name":"Education"}]}
+2026-07-07 20:36:49.775 [info] [2026-07-07T15:06:49.417Z] lserver: [SERVER] Initialized telemetry-dependent components: CodePercentageTracker, CodeDiffTracker, periodicLogging=false
+2026-07-07 20:36:49.777 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.419Z] lserver: In IAM Auth mode: false
+2026-07-07 20:36:49.779 [info] [2026-07-07T15:06:49.421Z] lserver: Initializing database at /home/pawan/.aws/amazonq/history/chat-history-473b5191b25eb25316317813d015862c.json
+2026-07-07 20:36:49.781 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.430Z] lserver: Watching 4 MCP config paths with chokidar
+2026-07-07 20:36:49.785 [info] [2026-07-07T15:06:49.432Z] lserver: Chat configuration updated customizationArn to undefined
+2026-07-07 20:36:49.796 [info] [2026-07-07T15:06:49.432Z] lserver: Chat configuration telemetry preference to OPTIN
+2026-07-07 20:36:49.799 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.432Z] lserver: LSP on initialize for QCodeAnalysisServer
+2026-07-07 20:36:49.801 [info] [2026-07-07T15:06:49.433Z] lserver: Passing client for class CodeWhispererRuntimeClient to sdkInitializator (v3) for additional setup (e.g. proxy)
+2026-07-07 20:36:49.810 [info] Read certificates for linux platform: 587
+2026-07-07 20:36:49.813 [info] Removed expired certificates: 8
+2026-07-07 20:36:49.816 [info] [SSL Certificates]
+- System root certificates length=587- Total certificates loaded=733- Valid (non-expired) cert length=725
+2026-07-07 20:36:49.826 [info] [2026-07-07T15:06:49.528Z] lserver: Using experimental proxy util
+2026-07-07 20:36:49.828 [info] [2026-07-07T15:06:49.531Z] lserver: Configured AWS SDK V3 Proxy for client.
+2026-07-07 20:36:49.834 [info] [2026-07-07T15:06:49.543Z] lserver: Updating configuration of local context server
+2026-07-07 20:36:49.835 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.543Z] lserver: Initializing local project context
+2026-07-07 20:36:49.847 [info] [2026-07-07T15:06:49.564Z] lserver: updateConfiguration: extensionName=AmazonQ-For-VSCode, isSupportedExtension=true
+2026-07-07 20:36:49.871 [info] [2026-07-07T15:06:49.571Z] lserver: ATXTransformServer initialized (local-build-verification support enabled)
+2026-07-07 20:36:49.873 [info] [2026-07-07T15:06:49.571Z] lserver: Attached new listener and notified of current config.
+2026-07-07 20:36:49.875 [info] [2026-07-07T15:06:49.571Z] lserver: Attached new listener and notified of current config.
+2026-07-07 20:36:49.877 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.745Z] lserver: abconfig error: Error: Authorization failed, bearer token is not set
+2026-07-07 20:36:49.879 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.746Z] lserver: Processing 1 workspace folders...
+2026-07-07 20:36:49.881 [info] [2026-07-07T15:06:49.746Z] lserver: Attached new listener and notified of current config.
+2026-07-07 20:36:49.883 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.746Z] lserver: Local context server has been initialized
+2026-07-07 20:36:49.888 [info] [2026-07-07T15:06:49.759Z] lserver: Document opened: file:///home/pawan/Desktop/education%20erp/Education/docs/schema_tenant_db.sql
+2026-07-07 20:36:49.890 [info] [2026-07-07T15:06:49.759Z] lserver: [SERVER] Tracking document open with RecentEditTracker: file:///home/pawan/Desktop/education%20erp/Education/docs/schema_tenant_db.sql
+2026-07-07 20:36:49.892 [info] [2026-07-07T15:06:49.761Z] lserver: Document opened: file:///home/pawan/Desktop/education%20erp/Education/package.json
+2026-07-07 20:36:49.896 [info] [2026-07-07T15:06:49.761Z] lserver: [SERVER] Tracking document open with RecentEditTracker: file:///home/pawan/Desktop/education%20erp/Education/package.json
+2026-07-07 20:36:49.900 [info] [2026-07-07T15:06:49.764Z] lserver: Document opened: file:///home/pawan/Desktop/education%20erp/Education/.next/package.json
+2026-07-07 20:36:49.905 [info] [2026-07-07T15:06:49.764Z] lserver: [SERVER] Tracking document open with RecentEditTracker: file:///home/pawan/Desktop/education%20erp/Education/.next/package.json
+2026-07-07 20:36:49.912 [info] [2026-07-07T15:06:49.816Z] lserver: Document opened: file:///home/pawan/Desktop/education%20erp/Education/.next/build/package.json
+2026-07-07 20:36:49.917 [info] [2026-07-07T15:06:49.817Z] lserver: [SERVER] Tracking document open with RecentEditTracker: file:///home/pawan/Desktop/education%20erp/Education/.next/build/package.json
+2026-07-07 20:36:49.922 [info] [2026-07-07T15:06:49.835Z] lserver: Document opened: file:///home/pawan/Desktop/education%20erp/Education/.next/dev/package.json
+2026-07-07 20:36:49.923 [info] [2026-07-07T15:06:49.835Z] lserver: [SERVER] Tracking document open with RecentEditTracker: file:///home/pawan/Desktop/education%20erp/Education/.next/dev/package.json
+2026-07-07 20:36:49.928 [info] [2026-07-07T15:06:49.865Z] lserver: Document opened: file:///home/pawan/Desktop/education%20erp/Education/.next/dev/build/package.json
+2026-07-07 20:36:49.929 [info] [2026-07-07T15:06:49.865Z] lserver: [SERVER] Tracking document open with RecentEditTracker: file:///home/pawan/Desktop/education%20erp/Education/.next/dev/build/package.json
+2026-07-07 20:36:49.932 [info] [2026-07-07T15:06:49.872Z] lserver: Workspace context server opt-in flag is: false
+2026-07-07 20:36:49.934 [info] [2026-07-07T15:06:49.872Z] lserver: User opted out, clearing workspace resources. isWorkflowInitialized=false
+2026-07-07 20:36:49.939 [info] [Warn  - 8:36:49 PM] [2026-07-07T15:06:49.873Z] lserver: No remote workspaceId found, skipping workspace deletion
+2026-07-07 20:36:49.943 [info] [2026-07-07T15:06:49.875Z] lserver: Read configuration customizationArn=undefined
+2026-07-07 20:36:49.947 [info] [2026-07-07T15:06:49.875Z] lserver: Read configuration optOutTelemetryPreference=OPTIN
+2026-07-07 20:36:49.953 [info] [2026-07-07T15:06:49.878Z] lserver: Read configuration customizationArn=undefined
+2026-07-07 20:36:49.959 [info] [2026-07-07T15:06:49.878Z] lserver: Read configuration optOutTelemetryPreference=OPTIN
+2026-07-07 20:36:49.965 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.884Z] lserver: Migrated agent config to CLI format: /home/pawan/.aws/amazonq/agents/default.json
+2026-07-07 20:36:49.967 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.884Z] lserver: MCP manager: initialized with 2 configs
+2026-07-07 20:36:49.968 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.885Z] lserver: MCP: Manager initialized, waiting for auth before discovering servers
+2026-07-07 20:36:49.970 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.887Z] lserver: Auth not ready (state: PENDING_CONNECTION), waiting before discovering MCP servers
+2026-07-07 20:36:49.972 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.926Z] lserver: Current history total size: 11681416 Bytes, max allowed: 209715200 Bytes
+2026-07-07 20:36:49.977 [info] [2026-07-07T15:06:49.955Z] lserver: Read сonfiguration includeSuggestionsWithCodeReferences=true
+2026-07-07 20:36:49.980 [info] [2026-07-07T15:06:49.955Z] lserver: Read configuration shareCodeWhispererContentWithAWS=true
+2026-07-07 20:36:49.982 [info] [2026-07-07T15:06:49.964Z] lserver: Read сonfiguration includeSuggestionsWithCodeReferences=true
+2026-07-07 20:36:49.983 [info] [2026-07-07T15:06:49.965Z] lserver: Read configuration shareCodeWhispererContentWithAWS=true
+2026-07-07 20:36:49.984 [info] [2026-07-07T15:06:49.965Z] lserver: Chat configuration updated customizationArn to undefined
+2026-07-07 20:36:49.986 [info] [2026-07-07T15:06:49.965Z] lserver: Chat configuration telemetry preference to OPTIN
+2026-07-07 20:36:49.987 [info] [2026-07-07T15:06:49.965Z] lserver: Updating configuration of local context server
+2026-07-07 20:36:49.988 [info] [Info  - 8:36:49 PM] [2026-07-07T15:06:49.965Z] lserver: Initializing local project context
+2026-07-07 20:36:50.067 [info] [Info  - 8:36:50 PM] [2026-07-07T15:06:50.032Z] lserver: ProcessWorkspaceFolders complete. 71 files found. 0 files exceeded 10 MB
+2026-07-07 20:36:50.493 [info] [Info  - 8:36:50 PM] [2026-07-07T15:06:50.256Z] lserver: MCP config file changed: /home/pawan/.aws/amazonq/agents/default.json
+2026-07-07 20:36:50.728 [info] [Info  - 8:36:50 PM] [2026-07-07T15:06:50.257Z] lserver: File watcher triggered - isProgrammaticChange: false, lastProgrammaticState: false
+2026-07-07 20:36:51.229 [info] [Info  - 8:36:51 PM] [2026-07-07T15:06:51.227Z] lserver: Context index built successfully
+2026-07-07 20:36:53.072 [info] [Info  - 8:36:53 PM] [2026-07-07T15:06:52.257Z] lserver: Reinitializing MCP servers
+2026-07-07 20:36:53.073 [info] [Info  - 8:36:53 PM] [2026-07-07T15:06:52.257Z] lserver: MCP: closing all clients and tracked processes
+2026-07-07 20:36:53.073 [info] [Warn  - 8:36:53 PM] [2026-07-07T15:06:52.263Z] lserver: Agent config not found at /home/pawan/Desktop/education erp/Education/.amazonq/agents/default.json, skipping.
+2026-07-07 20:36:53.074 [info] [Warn  - 8:36:53 PM] [2026-07-07T15:06:52.265Z] lserver: MCP config not found at /home/pawan/Desktop/education erp/Education/.amazonq/mcp.json, skipping.
+2026-07-07 20:36:53.074 [info] [Warn  - 8:36:53 PM] [2026-07-07T15:06:52.268Z] lserver: MCP config not found at /home/pawan/.aws/amazonq/mcp.json, skipping.
+2026-07-07 20:36:53.078 [info] [Info  - 8:36:53 PM] [2026-07-07T15:06:52.268Z] lserver: Loaded 0 servers from legacy MCP configs
+2026-07-07 20:36:53.084 [info] [Info  - 8:36:53 PM] [2026-07-07T15:06:52.269Z] lserver: Successfully processed 2 agent config files and legacy MCP configs
+2026-07-07 20:36:53.087 [info] [Info  - 8:36:53 PM] [2026-07-07T15:06:52.269Z] lserver: Using agent configuration
+2026-07-07 20:36:53.087 [info] [Info  - 8:36:53 PM] [2026-07-07T15:06:52.269Z] lserver: MCP servers reinitialization completed. Total servers: 0
+2026-07-07 20:36:54.450 [info] Auth refreshToken: token refresh successful (key=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91, new expiry=Tue Jul 07 2026 21:36:54 GMT+0530 (India Standard Time))
+2026-07-07 20:36:54.505 [info] [Info  - 8:36:54 PM] Runtime: Decoding encrypted credentials token
+2026-07-07 20:36:54.511 [info] [Info  - 8:36:54 PM] Decoding JWT token
+2026-07-07 20:36:54.514 [info] [Info  - 8:36:54 PM] Runtime: Storing Q credentials in bearer
+2026-07-07 20:36:54.515 [info] [Info  - 8:36:54 PM] Runtime: Successfully saved bearer credentials
+2026-07-07 20:36:54.519 [info] [Info  - 8:36:54 PM] UpdateBearerToken: {"data":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..W16_EdDtFq4asVew.9o_v4RHDKvhuHRcwuOiYzAru4aUqjjM_rQyjEqbKxrLUzb1vqfkZ56xhYHhymv27F3eI4dIYk5H3f6CevYcms0E-6hbpV3KZaer_9VrIEbimGP7uITMLJ6NwOQIASxbE___K4DfmHlx-RbJvM1M_W6zqLaQUodxVOQaSA5A97qCjhkLrjFoAHiX_NTTKXqlQTJh2DfQbPijkUzw8rBwJEYZ5mszFFN-pgHtzwdb_xg6sWCAhuqWATVtCutL4YXFRbwljYGj3-8wlLhyhAAnoJanE85pbkZtY0seMwgefmdkWHcu6VUkUPdL-Ohev7abJSd_0tlyIFkOFQEFJmQ.K-QSNSyqPlCLi4pw3UvI7Q","metadata":{"sso":{"startUrl":"https://view.awsapps.com/start"}},"encrypted":true}
+2026-07-07 20:36:54.538 [info] [Info  - 8:36:54 PM] Language client received initializeResult from server:
+2026-07-07 20:36:54.538 [info] {"capabilities":{"executeCommandProvider":{"commands":["aws/atxTransform/listOrCreateWorkspace","aws/atxTransform/listJobs","aws/atxTransform/startTransform","aws/atxTransform/getTransformInfo","aws/atxTransform/uploadPlan","aws/atxTransform/stopJob","aws/atxTransform/setCheckpoints","aws/atxTransform/updateWorkspace","aws/atxTransform/uploadPackages","aws/atxTransform/sendMessage","aws/atxTransform/listMessages","aws/atxTransform/batchGetMessages","aws/atxTransform/listArtifacts","aws/atxTransform/downloadArtifact","aws/atxTransform/completeLocalBuildHitl","aws/atxTransform/getJobDashboard","aws/atxTransform/getJobReport","aws/atxTransform/uploadCustomPlan","aws/atxTransform/loadOlderWorklogs","aws/chat/manageSubscription","aws/qNetTransform/startTransform","aws/qNetTransform/getTransform","aws/qNetTransform/pollTransform","aws/qNetTransform/pollTransformForPlan","aws/qNetTransform/getTransformPlan","aws/qNetTransform/cancelTransform","aws/qNetTransform/downloadArtifacts","aws/qNetTransform/cancelPolling","aws/codewhisperer/runSecurityScan","aws/codewhisperer/cancelSecurityScan"]},"workspace":{"workspaceFolders":{"supported":true,"changeNotifications":true},"fileOperations":{"didCreate":{"filters":[{"pattern":{"glob":"**/*.{ts,js,py,java}","matches":"file"}},{"pattern":{"glob":"**/*","matches":"folder"}},{"pattern":{"glob":"{**/*.abap,**/*.c,**/*.cpp,**/*.cs,**/*.dart,**/*.h,**/*.hcl,**/*.cc,**/*.hpp,**/*.go,**/*.java,**/*.js,**/*.json,**/*.jsonc,**/*.jsx,**/*.kt,**/*.kts,**/*.lua,**/*.wlua,**/*.php,**/*.ps1,**/*.psm1,**/*.py,**/*.r,**/*.rb,**/*.rs,**/*.sc,**/*.scala,**/*.sh,**/*.sql,**/*.sv,**/*.svh,**/*.swift,**/*.tf,**/*.ts,**/*.tsx,**/*.vh,**/*.vue,**/*.yaml,**/*.yml}","matches":"file"}}]},"didRename":{"filters":[{"pattern":{"glob":"**/*.{ts,js,py,java}","matches":"file"}},{"pattern":{"glob":"**/*","matches":"folder"}},{"pattern":{"glob":"{**/*.abap,**/*.c,**/*.cpp,**/*.cs,**/*.dart,**/*.h,**/*.hcl,**/*.cc,**/*.hpp,**/*.go,**/*.java,**/*.js,**/*.json,**/*.jsonc,**/*.jsx,**/*.kt,**/*.kts,**/*.lua,**/*.wlua,**/*.php,**/*.ps1,**/*.psm1,**/*.py,**/*.r,**/*.rb,**/*.rs,**/*.sc,**/*.scala,**/*.sh,**/*.sql,**/*.sv,**/*.svh,**/*.swift,**/*.tf,**/*.ts,**/*.tsx,**/*.vh,**/*.vue,**/*.yaml,**/*.yml}","matches":"file"}}]},"didDelete":{"filters":[{"pattern":{"glob":"**/*.{ts,js,py,java}","matches":"file"}},{"pattern":{"glob":"**/*","matches":"folder"}},{"pattern":{"glob":"{**/*.abap,**/*.c,**/*.cpp,**/*.cs,**/*.dart,**/*.h,**/*.hcl,**/*.cc,**/*.hpp,**/*.go,**/*.java,**/*.js,**/*.json,**/*.jsonc,**/*.jsx,**/*.kt,**/*.kts,**/*.lua,**/*.wlua,**/*.php,**/*.ps1,**/*.psm1,**/*.py,**/*.r,**/*.rb,**/*.rs,**/*.sc,**/*.scala,**/*.sh,**/*.sql,**/*.sv,**/*.svh,**/*.swift,**/*.tf,**/*.ts,**/*.tsx,**/*.vh,**/*.vue,**/*.yaml,**/*.yml}","matches":"file"}}]}}},"textDocumentSync":{"openClose":true,"change":2,"save":{"includeText":true}}},"awsServerCapabilities":{"configurationProvider":{"sections":["aws.transformProfiles","aws.atx.transformProfiles","aws.q.workspaceContext","aws.q","aws.q.customizations","aws.q.developerProfiles"]},"chatOptions":{"quickActions":{"quickActionsCommandGroups":[{"commands":[{"command":"/help","description":"Learn more about Amazon Q","icon":"help"},{"command":"/clear","description":"Clear this session","icon":"trash"},{"command":"/compact","description":"Compact this conversation","icon":"folder"}]}]},"mcpServers":true,"modelSelection":true,"history":true,"export":true,"shortcut":true,"showLogs":true,"reroute":true,"codeReviewInChat":true}},"serverInfo":{"name":"AWS CodeWhisperer","version":"1.72.0"}}
+2026-07-07 20:36:54.561 [info] Entering postflare logic
+2026-07-07 20:36:54.561 [info] amazonqLsp: [startup] Initializing language server configuration
+2026-07-07 20:36:54.615 [info] amazonqLsp: [startup] Language server configuration completed successfully
+2026-07-07 20:36:54.616 [warning] telemetry: invalid Metric:  "languageServer_setup" emitted with missing fields: id
+2026-07-07 20:36:54.640 [info] [2026-07-07T15:06:54.617Z] lserver: updateConfiguration: extensionName=AmazonQ-For-VSCode, isSupportedExtension=true
+2026-07-07 20:36:54.672 [info] [Info  - 8:36:54 PM] [2026-07-07T15:06:54.635Z] lserver: Logging level changed to info
+2026-07-07 20:36:54.715 [info] [Info  - 8:36:54 PM] [2026-07-07T15:06:54.696Z] lserver: Initializing local project context
+2026-07-07 20:36:55.247 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.237Z] lserver: Auth initialized, proceeding with MCP discovery
+2026-07-07 20:36:55.248 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.238Z] lserver: MCP is enabled, discovering servers
+2026-07-07 20:36:55.249 [info] [Warn  - 8:36:55 PM] [2026-07-07T15:06:55.238Z] lserver: Agent config not found at /home/pawan/Desktop/education erp/Education/.amazonq/agents/default.json, skipping.
+2026-07-07 20:36:55.250 [info] [Warn  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: MCP config not found at /home/pawan/Desktop/education erp/Education/.amazonq/mcp.json, skipping.
+2026-07-07 20:36:55.251 [info] [Warn  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: MCP config not found at /home/pawan/.aws/amazonq/mcp.json, skipping.
+2026-07-07 20:36:55.253 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: Loaded 0 servers from legacy MCP configs
+2026-07-07 20:36:55.254 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: Successfully processed 2 agent config files and legacy MCP configs
+2026-07-07 20:36:55.255 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: Using agent configuration
+2026-07-07 20:36:55.257 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: MCP: discovered 0 tools across all servers
+2026-07-07 20:36:55.259 [info] [Info  - 8:36:55 PM] [VSCode Telemetry] Emitting amazonq_mcpConfig telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","languageServerVersion":"1.72.0","numActiveServers":0,"numGlobalServers":0,"numProjectServers":0,"numToolsAlwaysAllowed":0,"numToolsDenied":0}
+2026-07-07 20:36:55.260 [warning] telemetry: invalid Metric: "amazonq_mcpConfig" emitted without the `result` property, which is always required. Consider using `.run()` instead of `.emit()`, which will set these properties automatically. See https://github.com/aws/aws-toolkit-vscode/blob/master/docs/telemetry.md#guidelines
+2026-07-07 20:36:55.260 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.241Z] lserver: MCP Config Metrics: 0 active servers, 0 tools
+2026-07-07 20:36:55.261 [info] [Info  - 8:36:55 PM] [2026-07-07T15:06:55.242Z] lserver: ProfileStatusMonitor started - checking MCP configuration every 24 hours
+2026-07-07 20:36:55.416 [info] initialized 'submitFeedback' command with default feedback id: Amazon Q
+2026-07-07 20:36:55.494 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:36:55.494 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 20:36:56.255 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:36:56.255 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 20:36:56.636 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:36:56.636 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 20:36:57.849 [info] [Info  - 8:36:57 PM] [2026-07-07T15:06:57.823Z] lserver: abconfig: [{"feature":"KiroPromptExperiment","value":{"stringValue":"PROMPT_22"},"variation":"PROMPT_22"}]
+2026-07-07 20:36:57.873 [info] [Info  - 8:36:57 PM] [2026-07-07T15:06:57.855Z] lserver: A/B testing enabled: false semantic search enabled false
+2026-07-07 20:37:01.626 [info] amazonqLsp: Adding external webview resource root: /home/pawan/.cache/aws/toolkits/language-servers/AmazonQ/1.72.0/clients
+2026-07-07 20:37:01.663 [info] using codewhispererService service configuration: default
+2026-07-07 20:37:04.046 [info] AB Testing Cohort Assignments [
+  {
+    feature: 'KiroPromptExperiment',
+    variation: 'PROMPT_22',
+    value: { stringValue: 'PROMPT_22' }
+  }
+]
+2026-07-07 20:37:04.056 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:37:04.056 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 20:37:04.554 [info] [Info  - 8:37:04 PM] Runtime: Decoding encrypted credentials token
+2026-07-07 20:37:04.554 [info] [Info  - 8:37:04 PM] Decoding JWT token
+2026-07-07 20:37:04.554 [info] [Info  - 8:37:04 PM] Runtime: Storing Q credentials in bearer
+2026-07-07 20:37:04.554 [info] [Info  - 8:37:04 PM] Runtime: Successfully saved bearer credentials
+2026-07-07 20:37:04.554 [info] [Info  - 8:37:04 PM] UpdateBearerToken: {"data":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..xCkvIBzWIkfxcMFV.lITDYj64T1ouy9QHf3LH1WaIeDwCZPNAPVQ4mQRi4Z9H1WED7t0oLLxccZXRFF-W3_0uUpdGWggnf8XXszygDYMOVm47PdhITfWlJe-wSUVGUqL8PQSEooEl3QXj9vKLF8ion5qIsbfjS_hGltA0sbmHFsKwdv2yfynWniR4KyuKEdkrTqvL7JzEPneB9uXFedjY5rRfqxFuKcvPO5V_tyb109zHy4ps-bP3dkLoZLoGr5ZP1-9xJYpDW-UP0hAWexMnix4JLIFhbMazscyGz2dkAMqYhuiIuJygmAOYoQGM8PgWvEaGnrxJz8iNtWPUa2NLOy8rMrAlg-8y6Q.LYX7jV4sAI1SA3RSu0_ghQ","metadata":{"sso":{"startUrl":"https://view.awsapps.com/start"}},"encrypted":true}
+2026-07-07 20:37:04.600 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:37:04.602 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"ui-is-ready"} from chat
+2026-07-07 20:37:04.603 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"aws/chat/ready"} from chat
+2026-07-07 20:37:04.603 [info] [Info  - 8:37:04 PM] [VSCode Client] "aws/chat/ready" event is received, sending chat options
+2026-07-07 20:37:04.604 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"aws/chat/tabAdd","params":{"tabId":"6kpdfr"}} from chat
+2026-07-07 20:37:04.605 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"6kpdfr","name":"tabAdd"}} from chat
+2026-07-07 20:37:04.605 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"aws/chat/listAvailableModels","params":{"tabId":"6kpdfr"}} from chat
+2026-07-07 20:37:04.607 [info] [Info  - 8:37:04 PM] [VSCode Client] Chat options flags: mcpServers=true, history=true, export=true, quickActions=[/help, /clear, /compact]
+2026-07-07 20:37:04.657 [info] [Info  - 8:37:04 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:37:04.712 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"aws/chat/tabAdd","params":{"tabId":"721yll","restoredTab":true}} from chat
+2026-07-07 20:37:04.715 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"tabAdd"}} from chat
+2026-07-07 20:37:04.716 [info] [Info  - 8:37:04 PM] [VSCode Client]  Received {"command":"aws/chat/listAvailableModels","params":{"tabId":"721yll"}} from chat
+2026-07-07 20:37:05.156 [info] [Info  - 8:37:05 PM] [VSCode Client]  Received {"requestId":"b70d954f-4488-4975-af52-44bb8931d28b","command":"aws/chat/openTab","params":{"success":true,"result":{"tabId":"721yll"}}} from chat
+2026-07-07 20:37:05.195 [info] [Info  - 8:37:05 PM] [VSCode Telemetry] Emitting amazonq_loadHistory telemetry: {"amazonqTimeToLoadHistory":411,"amazonqHistoryFileSize":367543,"openTabCount":1,"languageServerVersion":"1.72.0","result":"Succeeded"}
+2026-07-07 20:37:05.342 [info] [Error - 8:37:05 PM] [2026-07-07T15:07:05.340Z] lserver: setpaidtier
+    request: {"statusOnly":true}
+    response: {"$metadata":{"httpStatusCode":200,"requestId":"fdb958b0-aaa1-4ad6-aeb3-3a4236c84b4a","httpHeaders":{"date":"Tue, 07 Jul 2026 15:07:05 GMT","content-type":"application/json","content-length":"64","connection":"keep-alive","x-amzn-requestid":"fdb958b0-aaa1-4ad6-aeb3-3a4236c84b4a","x-xss-protection":"1; mode=block","strict-transport-security":"max-age=47304000; includeSubDomains","x-frame-options":"DENY","cache-control":"no-cache","x-content-type-options":"nosniff"},"attempts":1,"totalRetryDelay":0},"status":"INACTIVE"}
+    requestId: undefined
+    httpStatusCode: undefined
+    headers: undefined
+2026-07-07 20:37:12.127 [info] [Info  - 8:37:12 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 20:37:12.133 [info] [Info  - 8:37:12 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:37:13.387 [info] [Info  - 8:37:13 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:37:13.389 [info] [Info  - 8:37:13 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:37:27.501 [info] [Info  - 8:37:27 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 20:37:27.504 [info] [Info  - 8:37:27 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"is the things are done or in progress","escapedPrompt":"is the things are done or in progress","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 20:37:27.505 [info] [Info  - 8:37:27 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 20:37:27.531 [info] [Info  - 8:37:27 PM] [2026-07-07T15:07:27.521Z] lserver: remote workspaceId: undefined
+2026-07-07 20:37:27.532 [info] [Info  - 8:37:27 PM] [2026-07-07T15:07:27.522Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 20:37:27.532 [info] [Info  - 8:37:27 PM] [2026-07-07T15:07:27.524Z] lserver: Fixing history: tabId=721yll
+2026-07-07 20:37:35.309 [info] [Info  - 8:37:35 PM] [2026-07-07T15:07:35.306Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "d5a54622-9a88-44f3-bb35-4c8dc3052c51",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 20:37:40.278 [info] [Info  - 8:37:40 PM] [2026-07-07T15:07:40.272Z] lserver: Logging level changed to info
+2026-07-07 20:37:40.283 [info] [Info  - 8:37:40 PM] [2026-07-07T15:07:40.282Z] lserver: Initializing local project context
+2026-07-07 20:38:20.691 [info] [Info  - 8:38:20 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 20:38:20.695 [info] [Info  - 8:38:20 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:38:54.888 [info] [Info  - 8:38:54 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":87342,"toolCallLatency":"","cwsprChatTimeToFirstChunk":7783,"cwsprChatTimeBetweenChunks":"3,8,3,0,1,2,1,4,3,254,1,2,2,9,3,1,79261","requestId":"d5a54622-9a88-44f3-bb35-4c8dc3052c51","enabled":true,"modelId":"auto"}
+2026-07-07 20:38:54.889 [info] [Info  - 8:38:54 PM] [VSCode Telemetry] Emitting amazonq_startConversation telemetry: {"cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatProgrammingLanguage":"sql","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","result":"Succeeded"}
+2026-07-07 20:38:54.890 [info] [Info  - 8:38:54 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"d5a54622-9a88-44f3-bb35-4c8dc3052c51","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":7791,"cwsprChatFullResponseLatency":87350,"cwsprChatTimeBetweenChunks":[2,7,3,1,2,1,4,3,254,1,2,2,8,3,1,9,2,1,1,1,2],"cwsprChatRequestLength":37,"cwsprChatResponseLength":101,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["d5a54622-9a88-44f3-bb35-4c8dc3052c51"],"modelId":"auto"}
+2026-07-07 20:38:55.372 [info] [Info  - 8:38:55 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 20:38:55.378 [info] [Info  - 8:38:55 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:41:40.499 [info] telemetry: sent batch (size=20)
+2026-07-07 20:41:41.078 [info] telemetry: sent batch (size=8)
+2026-07-07 20:41:50.464 [info] [Info  - 8:41:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 20:41:50.465 [info] [Info  - 8:41:50 PM] [2026-07-07T15:11:50.450Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 20:42:05.146 [info] [Info  - 8:42:05 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:42:05.181 [info] [Info  - 8:42:05 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:42:10.081 [info] [Info  - 8:42:10 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 20:42:10.083 [info] [Info  - 8:42:10 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"done","escapedPrompt":"done","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 20:42:10.086 [info] [Info  - 8:42:10 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 20:42:10.108 [info] [Info  - 8:42:10 PM] [2026-07-07T15:12:10.094Z] lserver: remote workspaceId: undefined
+2026-07-07 20:42:10.109 [info] [Info  - 8:42:10 PM] [2026-07-07T15:12:10.095Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 20:42:10.109 [info] [Info  - 8:42:10 PM] [2026-07-07T15:12:10.096Z] lserver: Fixing history: tabId=721yll
+2026-07-07 20:42:15.895 [info] [Info  - 8:42:15 PM] [2026-07-07T15:12:15.890Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "f00cd901-abda-47ce-ad18-6e4908f288dc",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 20:42:17.194 [info] [Info  - 8:42:17 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"GeneratedCommand","result":"Succeeded","enabled":true}
+2026-07-07 20:42:18.486 [info] [Info  - 8:42:18 PM] [VSCode Client]  Received {"command":"aws/chat/buttonClick","params":{"tabId":"721yll","messageId":"tooluse_CCTHbPTa3zji6FbVzBj3pG","buttonId":"run-shell-command"}} from chat
+2026-07-07 20:42:18.518 [info] [Info  - 8:42:18 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"RunCommand","result":"Succeeded","enabled":true}
+2026-07-07 20:42:18.518 [info] [Info  - 8:42:18 PM] [2026-07-07T15:12:18.496Z] lserver: Command: (not started) [sh -c command -v curl]
+2026-07-07 20:42:18.530 [info] [Info  - 8:42:18 PM] [2026-07-07T15:12:18.518Z] lserver: Invoking /bin/bash command: "curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/login && echo "" && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/student && echo "" && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/teacher && echo "" && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/admin" in cwd: "/home/pawan/Desktop/education erp/Education"
+2026-07-07 20:42:18.530 [info] [Info  - 8:42:18 PM] [2026-07-07T15:12:18.519Z] lserver: Command: (not started) [/bin/bash -c curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/login && echo "" && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/student && echo "" && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/teacher && echo "" && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/admin]
+2026-07-07 20:42:19.383 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"curl"}
+2026-07-07 20:42:19.383 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"echo"}
+2026-07-07 20:42:19.383 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"curl"}
+2026-07-07 20:42:19.384 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"echo"}
+2026-07-07 20:42:19.384 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"curl"}
+2026-07-07 20:42:19.384 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"echo"}
+2026-07-07 20:42:19.384 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"curl"}
+2026-07-07 20:42:19.385 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_CCTHbPTa3zji6FbVzBj3pG","perfE2ELatency":2180,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 20:42:19.385 [info] [Info  - 8:42:19 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_CCTHbPTa3zji6FbVzBj3pG","result":"Succeeded","languageServerVersion":"1.72.0","latency":7080,"toolCallLatency":"2180","cwsprChatTimeToFirstChunk":5790,"cwsprChatTimeBetweenChunks":"4,1,1,2,1,1,1281","requestId":"f00cd901-abda-47ce-ad18-6e4908f288dc","enabled":true,"modelId":"auto"}
+2026-07-07 20:42:19.404 [info] [Info  - 8:42:19 PM] [2026-07-07T15:12:19.373Z] lserver: Fixing history: tabId=721yll
+2026-07-07 20:42:25.301 [info] [Info  - 8:42:25 PM] [2026-07-07T15:12:25.297Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "adfb1235-818a-4c14-af87-0f11ecc2e707",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 20:42:43.486 [info] [Info  - 8:42:43 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":24067,"toolCallLatency":"","cwsprChatTimeToFirstChunk":5893,"cwsprChatTimeBetweenChunks":"1,1,1,33,124,105,66,75,94,68,90,35,78,68,52,47,81,89,36,144,52,78,76,63,114,66,57,70,144,1,4,84,57,32,93,87,38,60,82,90,37,77,69,88,91,88,93,87,56,68,59,87,89,44,11,125,55,127,88,93,50,145,73,118,67,83,90,128,95,59,115,81,76,76,90,52,128,18,85,167,90,89,90,19,98,98,98,156,49,106,85,78,70,106,28,121,11,119,55,91,92,26,82,116,65,88,24,126,76,127,103,128,71,72,67,47,117,95,111,117,141,109,99,76,108,100,162,93,146,84,114,104,110,116,73,144,49,122,66,47,216,103,149,99,152,69,79,69,102,87,44,126,83,81,88,120,48,101,94,87,41,89,101,74,177,15,107,84,81,131,16,113,61,1133,92,80,134,90,97,104,68,90,38,70,102,62,43,92,45,88,90,29,81,113,89,67,77,84,90,90,416","requestId":"adfb1235-818a-4c14-af87-0f11ecc2e707","enabled":true,"modelId":"auto"}
+2026-07-07 20:42:43.487 [info] [Info  - 8:42:43 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"adfb1235-818a-4c14-af87-0f11ecc2e707","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":5801,"cwsprChatFullResponseLatency":33377,"cwsprChatTimeBetweenChunks":[5,1,1,2,1,1,1,664,2,6,1,1,4,1,4,1,17,4,7,8,18,237,2,1,2,1,1,1,1,1,23,1,1,1,1,1,1,1,1,164,1,39,5,5,1,5,1783437145298,1,1,1,33,124,105,66,75,94,68,90,35,78,68,52,47,81,89,36,144,52,78,76,63,114,66,57,70,143,1,3,84,57,32,93,87,38,60,82,90,37,77,69,88,91,88,92,87,56,68,58,87,89],"cwsprChatRequestLength":4,"cwsprChatResponseLength":1790,"cwsprChatConversationType":"AgenticChatWithToolUse","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["f00cd901-abda-47ce-ad18-6e4908f288dc","adfb1235-818a-4c14-af87-0f11ecc2e707"],"modelId":"auto"}
+2026-07-07 20:42:43.877 [info] [Info  - 8:42:43 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 20:42:43.879 [info] [Info  - 8:42:43 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:46:42.167 [info] telemetry: sent batch (size=16)
+2026-07-07 20:46:50.581 [info] [Info  - 8:46:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 20:46:50.581 [info] [Info  - 8:46:50 PM] [2026-07-07T15:16:50.450Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 20:46:57.825 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:46:57.826 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 20:49:21.979 [info] [Info  - 8:49:21 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 20:49:21.981 [info] [Info  - 8:49:21 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"both i have to do","escapedPrompt":"both i have to do","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 20:49:21.984 [info] [Info  - 8:49:21 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 20:49:22.004 [info] [Info  - 8:49:22 PM] [2026-07-07T15:19:21.993Z] lserver: remote workspaceId: undefined
+2026-07-07 20:49:22.005 [info] [Info  - 8:49:22 PM] [2026-07-07T15:19:21.993Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 20:49:22.005 [info] [Info  - 8:49:22 PM] [2026-07-07T15:19:21.994Z] lserver: Fixing history: tabId=721yll
+2026-07-07 20:49:28.486 [info] [Info  - 8:49:28 PM] [2026-07-07T15:19:28.483Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "d7a50b3f-f905-42b7-9538-b578be1b5e95",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 20:50:26.703 [info] [Info  - 8:50:26 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 20:50:26.715 [info] [Info  - 8:50:26 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:50:30.236 [info] [Info  - 8:50:30 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:50:30.245 [info] [Info  - 8:50:30 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:50:46.547 [info] [Info  - 8:50:46 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":84531,"toolCallLatency":"","cwsprChatTimeToFirstChunk":6483,"cwsprChatTimeBetweenChunks":"1,1,1,2,78044","requestId":"d7a50b3f-f905-42b7-9538-b578be1b5e95","enabled":true,"modelId":"auto"}
+2026-07-07 20:50:46.549 [info] [Info  - 8:50:46 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"d7a50b3f-f905-42b7-9538-b578be1b5e95","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":6493,"cwsprChatFullResponseLatency":84541,"cwsprChatTimeBetweenChunks":[1,1,1,2,1,1,1,256,52,1],"cwsprChatRequestLength":17,"cwsprChatResponseLength":37,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["d7a50b3f-f905-42b7-9538-b578be1b5e95"],"modelId":"auto"}
+2026-07-07 20:50:47.174 [info] [Info  - 8:50:47 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 20:50:47.178 [info] [Info  - 8:50:47 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:51:14.406 [info] [Info  - 8:51:14 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 20:51:14.420 [info] [Info  - 8:51:14 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:51:43.010 [info] telemetry: sent batch (size=7)
+2026-07-07 20:51:50.460 [info] [Info  - 8:51:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 20:51:50.460 [info] [Info  - 8:51:50 PM] [2026-07-07T15:21:50.450Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 20:52:03.406 [info] [Info  - 8:52:03 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:52:03.428 [info] [Info  - 8:52:03 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:52:38.916 [info] [Info  - 8:52:38 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 20:52:38.930 [info] [Info  - 8:52:38 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:53:55.211 [info] [Info  - 8:53:55 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:53:55.231 [info] [Info  - 8:53:55 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:55:16.285 [info] [Info  - 8:55:16 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 20:55:16.286 [info] [Info  - 8:55:16 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"again yoy stopped i think any problen in this segment for operating you or work has been done","escapedPrompt":"again yoy stopped i think any problen in this segment for operating you or work has been done","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 20:55:16.288 [info] [Info  - 8:55:16 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 20:55:16.312 [info] [Info  - 8:55:16 PM] [2026-07-07T15:25:16.297Z] lserver: remote workspaceId: undefined
+2026-07-07 20:55:16.312 [info] [Info  - 8:55:16 PM] [2026-07-07T15:25:16.298Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 20:55:16.312 [info] [Info  - 8:55:16 PM] [2026-07-07T15:25:16.299Z] lserver: Fixing history: tabId=721yll
+2026-07-07 20:55:22.497 [info] [Info  - 8:55:22 PM] [2026-07-07T15:25:22.494Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "8cc33828-29b0-45d8-a45a-28141250f864",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 20:56:06.032 [info] [Info  - 8:56:06 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 20:56:06.045 [info] [Info  - 8:56:06 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:56:39.409 [info] [Info  - 8:56:39 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":83085,"toolCallLatency":"","cwsprChatTimeToFirstChunk":6185,"cwsprChatTimeBetweenChunks":"3,1,1,1,2,76893","requestId":"8cc33828-29b0-45d8-a45a-28141250f864","enabled":true,"modelId":"auto"}
+2026-07-07 20:56:39.410 [info] [Info  - 8:56:39 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"8cc33828-29b0-45d8-a45a-28141250f864","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":6198,"cwsprChatFullResponseLatency":83098,"cwsprChatTimeBetweenChunks":[3,1,1,1,2,1,1,1,44,2,4,1,1,1],"cwsprChatRequestLength":93,"cwsprChatResponseLength":40,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["8cc33828-29b0-45d8-a45a-28141250f864"],"modelId":"auto"}
+2026-07-07 20:56:39.862 [info] [Info  - 8:56:39 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 20:56:39.869 [info] [Info  - 8:56:39 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 20:56:43.682 [info] telemetry: sent batch (size=8)
+2026-07-07 20:56:50.454 [info] [Info  - 8:56:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 20:56:50.454 [info] [Info  - 8:56:50 PM] [2026-07-07T15:26:50.450Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 20:56:57.595 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 20:56:57.595 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 20:59:56.967 [info] [Info  - 8:59:56 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 20:59:56.980 [info] [Info  - 8:59:56 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:00:13.032 [info] [Info  - 9:00:13 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 21:00:13.034 [info] [Info  - 9:00:13 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"how much done","escapedPrompt":"how much done","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 21:00:13.035 [info] [Info  - 9:00:13 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 21:00:13.057 [info] [Info  - 9:00:13 PM] [2026-07-07T15:30:13.047Z] lserver: remote workspaceId: undefined
+2026-07-07 21:00:13.057 [info] [Info  - 9:00:13 PM] [2026-07-07T15:30:13.047Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:00:13.057 [info] [Info  - 9:00:13 PM] [2026-07-07T15:30:13.049Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:00:18.626 [info] [Info  - 9:00:18 PM] [2026-07-07T15:30:18.624Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "8c2310ae-4280-47a7-9af4-8ccb1d99be4e",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:00:35.035 [info] [Info  - 9:00:35 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 21:00:35.049 [info] [Info  - 9:00:35 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"how much teacher done","escapedPrompt":"how much teacher done","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 21:00:35.051 [info] [Info  - 9:00:35 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 21:00:35.183 [info] [Info  - 9:00:35 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"StopChat","result":"Succeeded","enabled":true}
+2026-07-07 21:00:35.184 [info] [Info  - 9:00:35 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"8c2310ae-4280-47a7-9af4-8ccb1d99be4e","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatTimeToFirstChunk":5578,"cwsprChatTimeBetweenChunks":[3,10,6,4,3,6,6,2,3,6,5,5,8,4,3,9,204,238,1,467,4,1,1,1],"cwsprChatRequestLength":13,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"result":"Cancelled","enabled":true,"languageServerVersion":"1.72.0","requestIds":["8c2310ae-4280-47a7-9af4-8ccb1d99be4e"],"modelId":"auto"}
+2026-07-07 21:00:35.185 [warning] telemetry: invalid Metric:  "amazonq_addMessage" emitted with missing fields: cwsprChatFullResponseLatency
+2026-07-07 21:00:35.206 [info] [Info  - 9:00:35 PM] [2026-07-07T15:30:35.195Z] lserver: remote workspaceId: undefined
+2026-07-07 21:00:35.206 [info] [Info  - 9:00:35 PM] [2026-07-07T15:30:35.195Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:00:35.208 [info] [Info  - 9:00:35 PM] [2026-07-07T15:30:35.196Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:00:35.295 [info] [Info  - 9:00:35 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 21:00:35.328 [info] [Info  - 9:00:35 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:00:41.088 [info] [Info  - 9:00:41 PM] [2026-07-07T15:30:41.084Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "80712781-3e52-4c5f-9cc7-81ea749caeb7",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:00:41.874 [info] [Info  - 9:00:41 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"GeneratedCommand","result":"Succeeded","enabled":true}
+2026-07-07 21:00:45.249 [info] [Info  - 9:00:45 PM] [VSCode Client]  Received {"command":"aws/chat/buttonClick","params":{"tabId":"721yll","messageId":"tooluse_LBQVvkLmyS4khdUmtbUvPB","buttonId":"run-shell-command"}} from chat
+2026-07-07 21:00:45.284 [info] [Info  - 9:00:45 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"RunCommand","result":"Succeeded","enabled":true}
+2026-07-07 21:00:45.286 [info] [Info  - 9:00:45 PM] [2026-07-07T15:30:45.253Z] lserver: Command: (not started) [sh -c command -v find]
+2026-07-07 21:00:45.306 [info] [Info  - 9:00:45 PM] [2026-07-07T15:30:45.280Z] lserver: Invoking /bin/bash command: "find "/home/pawan/Desktop/education erp/Education/app/(dashboard)/teacher" -name "page.tsx" | xargs wc -l 2>/dev/null" in cwd: "/home/pawan/Desktop/education erp/Education"
+2026-07-07 21:00:45.306 [info] [Info  - 9:00:45 PM] [2026-07-07T15:30:45.282Z] lserver: Command: (not started) [/bin/bash -c find "/home/pawan/Desktop/education erp/Education/app/(dashboard)/teacher" -name "page.tsx" | xargs wc -l 2>/dev/null]
+2026-07-07 21:00:45.343 [info] [Info  - 9:00:45 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Failed","command":"find"}
+2026-07-07 21:00:45.343 [warning] telemetry: invalid Metric: "amazonq_bashCommand" emitted with result=Failed but without the `reason` property. Consider using `.run()` instead of `.emit()`, which will set these properties automatically. See https://github.com/aws/aws-toolkit-vscode/blob/master/docs/telemetry.md#guidelines
+2026-07-07 21:00:45.344 [info] [Info  - 9:00:45 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Failed","command":"xargs"}
+2026-07-07 21:00:45.344 [warning] telemetry: invalid Metric: "amazonq_bashCommand" emitted with result=Failed but without the `reason` property. Consider using `.run()` instead of `.emit()`, which will set these properties automatically. See https://github.com/aws/aws-toolkit-vscode/blob/master/docs/telemetry.md#guidelines
+2026-07-07 21:00:45.344 [info] [Info  - 9:00:45 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_LBQVvkLmyS4khdUmtbUvPB","perfE2ELatency":3457,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:00:45.345 [info] [Info  - 9:00:45 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_LBQVvkLmyS4khdUmtbUvPB","result":"Succeeded","languageServerVersion":"1.72.0","latency":6662,"toolCallLatency":"3456","cwsprChatTimeToFirstChunk":5884,"cwsprChatTimeBetweenChunks":"1,1,777","requestId":"80712781-3e52-4c5f-9cc7-81ea749caeb7","enabled":true,"modelId":"auto"}
+2026-07-07 21:00:45.346 [info] [Info  - 9:00:45 PM] [2026-07-07T15:30:45.330Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:00:49.534 [info] [Info  - 9:00:49 PM] [2026-07-07T15:30:49.531Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "29517cbc-ce31-4fc3-bbb3-40b3e94783e7",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:00:51.224 [info] [Info  - 9:00:51 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"GeneratedCommand","result":"Succeeded","enabled":true}
+2026-07-07 21:00:53.867 [info] [Info  - 9:00:53 PM] [VSCode Client]  Received {"command":"aws/chat/buttonClick","params":{"tabId":"721yll","messageId":"tooluse_OIy5pSbpV5H8HSLR0VUloI","buttonId":"run-shell-command"}} from chat
+2026-07-07 21:00:53.889 [info] [Info  - 9:00:53 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"RunCommand","result":"Succeeded","enabled":true}
+2026-07-07 21:00:53.890 [info] [Info  - 9:00:53 PM] [2026-07-07T15:30:53.870Z] lserver: Command: (not started) [sh -c command -v find]
+2026-07-07 21:00:53.906 [info] [Info  - 9:00:53 PM] [2026-07-07T15:30:53.888Z] lserver: Invoking /bin/bash command: "find "/home/pawan/Desktop/education erp/Education/app/(dashboard)/teacher" -name "*.tsx" | while read f; do lines=$(wc -l < "$f"); echo "$lines $f"; done" in cwd: "/home/pawan/Desktop/education erp/Education"
+2026-07-07 21:00:53.906 [info] [Info  - 9:00:53 PM] [2026-07-07T15:30:53.889Z] lserver: Command: (not started) [/bin/bash -c find "/home/pawan/Desktop/education erp/Education/app/(dashboard)/teacher" -name "*.tsx" | while read f; do lines=$(wc -l < "$f"); echo "$lines $f"; done]
+2026-07-07 21:00:54.038 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"find"}
+2026-07-07 21:00:54.039 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"while"}
+2026-07-07 21:00:54.041 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"do"}
+2026-07-07 21:00:54.042 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"echo"}
+2026-07-07 21:00:54.043 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"done"}
+2026-07-07 21:00:54.044 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_OIy5pSbpV5H8HSLR0VUloI","perfE2ELatency":2787,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:00:54.049 [info] [Info  - 9:00:54 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_OIy5pSbpV5H8HSLR0VUloI","result":"Succeeded","languageServerVersion":"1.72.0","latency":5877,"toolCallLatency":"2787","cwsprChatTimeToFirstChunk":5877,"cwsprChatTimeBetweenChunks":"","requestId":"29517cbc-ce31-4fc3-bbb3-40b3e94783e7","enabled":true,"modelId":"auto"}
+2026-07-07 21:00:54.051 [info] [Info  - 9:00:54 PM] [2026-07-07T15:30:54.011Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:00:58.668 [info] [Info  - 9:00:58 PM] [2026-07-07T15:30:58.666Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "ec755cb5-fcb9-4451-9611-67167ccca845",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:01:44.499 [info] telemetry: sent batch (size=20)
+2026-07-07 21:01:50.463 [info] [Info  - 9:01:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 21:01:50.464 [info] [Info  - 9:01:50 PM] [2026-07-07T15:31:50.451Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 21:02:19.435 [info] [Info  - 9:02:19 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":85394,"toolCallLatency":"","cwsprChatTimeToFirstChunk":4634,"cwsprChatTimeBetweenChunks":"1,0,1,2,2,1,2,1,3,4,1,3,1,2,5,3,2,41,42,48,48,46,80501","requestId":"ec755cb5-fcb9-4451-9611-67167ccca845","enabled":true,"modelId":"auto"}
+2026-07-07 21:02:19.436 [info] [Info  - 9:02:19 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"ec755cb5-fcb9-4451-9611-67167ccca845","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":5892,"cwsprChatFullResponseLatency":104232,"cwsprChatTimeBetweenChunks":[1,1,11,7,162,1,4,90,1,1,1,1,95,1,3,1,7,1,328,1,1,1,1,8,1,15,1783438249533,129,1,1,1,2,1,1,1,1,1,1209,36,1,6,169,25,15,5,6,7,32,5,1783438258667,1,1,2,2,1,2,1,3,4,1,3,1,2,5,3,2,41,42,48,48,46,236,238,575,5,1,5,1,1,1],"cwsprChatRequestLength":21,"cwsprChatResponseLength":158,"cwsprChatConversationType":"AgenticChatWithToolUse","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["80712781-3e52-4c5f-9cc7-81ea749caeb7","29517cbc-ce31-4fc3-bbb3-40b3e94783e7","ec755cb5-fcb9-4451-9611-67167ccca845"],"modelId":"auto"}
+2026-07-07 21:02:19.854 [info] [Info  - 9:02:19 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 21:02:19.858 [info] [Info  - 9:02:19 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:06:45.256 [info] telemetry: sent batch (size=4)
+2026-07-07 21:06:51.572 [info] Refreshing indexes...
+2026-07-07 21:06:57.696 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 21:06:57.696 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 21:16:57.898 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 21:16:57.899 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 21:26:07.276 [info] [Info  - 9:26:07 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 21:26:07.278 [info] [Info  - 9:26:07 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"i am seriously telling you have some problems","escapedPrompt":"i am seriously telling you have some problems","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 21:26:07.280 [info] [Info  - 9:26:07 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 21:26:07.300 [info] [Info  - 9:26:07 PM] [2026-07-07T15:56:07.290Z] lserver: remote workspaceId: undefined
+2026-07-07 21:26:07.302 [info] [Info  - 9:26:07 PM] [2026-07-07T15:56:07.290Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:26:07.302 [info] [Info  - 9:26:07 PM] [2026-07-07T15:56:07.291Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:26:18.377 [info] [Info  - 9:26:18 PM] [2026-07-07T15:56:18.364Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "16ff6e15-a014-4c89-8703-a05d94acb281",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:26:50.582 [info] [Info  - 9:26:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 21:26:50.582 [info] [Info  - 9:26:50 PM] [2026-07-07T15:56:50.454Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 21:26:55.112 [info] [Info  - 9:26:55 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 21:26:55.136 [info] [Info  - 9:26:55 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"StopChat","result":"Succeeded","enabled":true}
+2026-07-07 21:26:55.137 [info] [Info  - 9:26:55 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"show me the files you are editing write now in workspace area","escapedPrompt":"show me the files you are editing write now in workspace area","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 21:26:55.139 [info] [Info  - 9:26:55 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"16ff6e15-a014-4c89-8703-a05d94acb281","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatTimeToFirstChunk":11076,"cwsprChatTimeBetweenChunks":[2,1,1,1,1,1,1,280,1,2,1,1],"cwsprChatRequestLength":45,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"result":"Cancelled","enabled":true,"languageServerVersion":"1.72.0","requestIds":["16ff6e15-a014-4c89-8703-a05d94acb281"],"modelId":"auto"}
+2026-07-07 21:26:55.140 [info] [Info  - 9:26:55 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 21:26:55.154 [info] [Info  - 9:26:55 PM] [2026-07-07T15:56:55.146Z] lserver: remote workspaceId: undefined
+2026-07-07 21:26:55.154 [info] [Info  - 9:26:55 PM] [2026-07-07T15:56:55.146Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:26:55.155 [info] [Info  - 9:26:55 PM] [2026-07-07T15:56:55.147Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:26:55.337 [info] [Info  - 9:26:55 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 21:26:55.339 [info] [Info  - 9:26:55 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:26:57.653 [info] auth: Connection is valid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 21:26:57.653 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to valid
+2026-07-07 21:27:01.398 [info] [Info  - 9:27:01 PM] [2026-07-07T15:57:01.395Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "790a1d6d-b75c-4e85-9aec-3341ff1b29bf",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:28:21.364 [info] [Info  - 9:28:21 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":86198,"toolCallLatency":"","cwsprChatTimeToFirstChunk":6244,"cwsprChatTimeBetweenChunks":"1,1,0,1,0,1,0,1,0,1,0,311,1,79636","requestId":"790a1d6d-b75c-4e85-9aec-3341ff1b29bf","enabled":true,"modelId":"auto"}
+2026-07-07 21:28:21.364 [info] [Info  - 9:28:21 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"790a1d6d-b75c-4e85-9aec-3341ff1b29bf","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":6251,"cwsprChatFullResponseLatency":86205,"cwsprChatTimeBetweenChunks":[1,1,1,1,1,1,311,1,1,432,5,8,1],"cwsprChatRequestLength":61,"cwsprChatResponseLength":130,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["790a1d6d-b75c-4e85-9aec-3341ff1b29bf"],"modelId":"auto"}
+2026-07-07 21:28:21.792 [info] [Info  - 9:28:21 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 21:28:21.801 [info] [Info  - 9:28:21 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:30:20.993 [info] [Info  - 9:30:20 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"721yll"}} from chat
+2026-07-07 21:30:20.995 [info] [Info  - 9:30:20 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"done","escapedPrompt":"done","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"721yll","context":[]}} from chat
+2026-07-07 21:30:20.997 [info] [Info  - 9:30:20 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"721yll","name":"addMessage"}} from chat
+2026-07-07 21:30:21.023 [info] [Info  - 9:30:21 PM] [2026-07-07T16:00:21.008Z] lserver: remote workspaceId: undefined
+2026-07-07 21:30:21.024 [info] [Info  - 9:30:21 PM] [2026-07-07T16:00:21.008Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:30:21.024 [info] [Info  - 9:30:21 PM] [2026-07-07T16:00:21.010Z] lserver: Fixing history: tabId=721yll
+2026-07-07 21:30:23.148 [info] [Info  - 9:30:23 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"error-message-id-58a1b553-2710-4519-b564-cba032537db8","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":402,"cwsprChatRequestLength":4,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"result":"Failed","enabled":true,"languageServerVersion":"1.72.0","requestIds":["e6389c94-9bba-4848-b954-e95b466671a9"],"errorMessage":"You have reached the limit.","errorCode":"QModelResponse","modelId":"auto"}
+2026-07-07 21:30:23.148 [warning] telemetry: invalid Metric: "amazonq_addMessage" emitted with result=Failed but without the `reason` property. Consider using `.run()` instead of `.emit()`, which will set these properties automatically. See https://github.com/aws/aws-toolkit-vscode/blob/master/docs/telemetry.md#guidelines
+2026-07-07 21:30:23.148 [warning] telemetry: invalid Metric:  "amazonq_addMessage" emitted with missing fields: cwsprChatFullResponseLatency,cwsprChatTimeBetweenChunks,cwsprChatTimeToFirstChunk
+2026-07-07 21:30:23.497 [info] [Info  - 9:30:23 PM] [VSCode Telemetry] Emitting amazonq_messageResponseError telemetry: {"cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatProgrammingLanguage":"sql","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatResponseCode":402,"cwsprChatRequestLength":4,"cwsprChatConversationType":"AgenticChat","requestId":"e6389c94-9bba-4848-b954-e95b466671a9","reasonDesc":"You have reached the limit.","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","enabled":true,"cwsprChatConversationId":"2bcbcf97-9a74-47e9-8d55-170119866c3f","languageServerVersion":"1.72.0","modelId":"auto"}
+2026-07-07 21:30:23.498 [info] [Error - 9:30:23 PM] [2026-07-07T16:00:23.495Z] lserver: {
+  "code": "QModelResponse",
+  "requestId": "e6389c94-9bba-4848-b954-e95b466671a9",
+  "name": "Error",
+  "message": "You have reached the limit.",
+  "cause": {
+    "$fault": "client",
+    "$metadata": {
+      "httpStatusCode": 402,
+      "requestId": "e6389c94-9bba-4848-b954-e95b466671a9",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "name": "ServiceQuotaExceededException",
+    "reason": "MONTHLY_REQUEST_COUNT"
+  }
+}
+2026-07-07 21:30:23.512 [info] [Info  - 9:30:23 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"721yll"}} from chat
+2026-07-07 21:30:23.513 [info] [Info  - 9:30:23 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:30:33.699 [info] [Info  - 9:30:33 PM] [VSCode Client]  Received {"command":"aws/chat/tabBarAction","params":{"tabId":"721yll","action":"export"}} from chat
+2026-07-07 21:30:34.138 [info] [Info  - 9:30:34 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:30:34.149 [info] [Info  - 9:30:34 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:30:43.324 [info] [Error - 9:30:43 PM] [2026-07-07T16:00:43.323Z] lserver: Unable to export tab "721yll": Export failed
+2026-07-07 21:30:43.325 [info] [Info  - 9:30:43 PM] [VSCode Telemetry] Emitting amazonq_exportTab telemetry: {"filenameExt":"","languageServerVersion":"1.72.0","result":"Failed"}
+2026-07-07 21:30:43.325 [warning] telemetry: invalid Metric: "amazonq_exportTab" emitted with result=Failed but without the `reason` property. Consider using `.run()` instead of `.emit()`, which will set these properties automatically. See https://github.com/aws/aws-toolkit-vscode/blob/master/docs/telemetry.md#guidelines
+2026-07-07 21:30:43.330 [info] [Info  - 9:30:43 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:30:43.344 [info] [Info  - 9:30:43 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatPostMessageRejected","reason":"unknownCommand","command":"aws/chat/tabBarAction"}} from chat
+2026-07-07 21:30:43.347 [info] [Info  - 9:30:43 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:30:43.349 [info] [Info  - 9:30:43 PM] [VSCode Telemetry] Emitting amazonq_chatPostMessageRejected telemetry: {"reason":"unknownCommand","command":"aws/chat/tabBarAction","languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:30:45.503 [info] [Info  - 9:30:45 PM] [VSCode Client]  Received {"command":"aws/chat/tabBarAction","params":{"tabId":"721yll","action":"show_logs"}} from chat
+2026-07-07 21:30:45.503 [info] [Info  - 9:30:45 PM] [VSCode Client] Received show_logs action, showing disclaimer
+2026-07-07 21:30:45.503 [info] [Info  - 9:30:45 PM] [VSCode Client] Opening logs directory
+2026-07-07 21:30:45.547 [info] [Info  - 9:30:45 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatPostMessageRejected","reason":"unknownCommand","command":"aws/chat/tabBarAction"}} from chat
+2026-07-07 21:30:45.552 [info] [Info  - 9:30:45 PM] [VSCode Telemetry] Emitting amazonq_chatPostMessageRejected telemetry: {"reason":"unknownCommand","command":"aws/chat/tabBarAction","languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:30:46.284 [info] [Info  - 9:30:46 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:30:46.297 [info] [Info  - 9:30:46 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:31:02.287 [info] [Info  - 9:31:02 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:31:02.297 [info] [Info  - 9:31:02 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:31:02.385 [info] [Info  - 9:31:02 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:31:02.405 [info] [Info  - 9:31:02 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:31:46.139 [info] telemetry: sent batch (size=18)
+2026-07-07 21:31:50.462 [info] [Info  - 9:31:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 21:31:50.462 [info] [Info  - 9:31:50 PM] [2026-07-07T16:01:50.453Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 21:31:53.129 [info] [Info  - 9:31:53 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:31:53.138 [info] [Info  - 9:31:53 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:31:57.828 [info] [Info  - 9:31:57 PM] [VSCode Client]  Received {"command":"aws/chat/tabBarAction","params":{"tabId":"721yll","action":"show_logs"}} from chat
+2026-07-07 21:31:57.829 [info] [Info  - 9:31:57 PM] [VSCode Client] Received show_logs action, showing disclaimer
+2026-07-07 21:31:57.829 [info] [Info  - 9:31:57 PM] [VSCode Client] Opening logs directory
+2026-07-07 21:31:57.860 [info] [Info  - 9:31:57 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatPostMessageRejected","reason":"unknownCommand","command":"aws/chat/tabBarAction"}} from chat
+2026-07-07 21:31:57.864 [info] [Info  - 9:31:57 PM] [VSCode Telemetry] Emitting amazonq_chatPostMessageRejected telemetry: {"reason":"unknownCommand","command":"aws/chat/tabBarAction","languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:31:59.497 [info] [Info  - 9:31:59 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:31:59.502 [info] [Info  - 9:31:59 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:32:06.273 [info] [Info  - 9:32:06 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:32:06.280 [info] [Info  - 9:32:06 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:32:06.434 [info] [Info  - 9:32:06 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:32:06.446 [info] [Info  - 9:32:06 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:32:28.501 [info] [Info  - 9:32:28 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:32:28.506 [info] [Info  - 9:32:28 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:32:45.546 [info] [Info  - 9:32:45 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:32:45.550 [info] [Info  - 9:32:45 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:32:47.316 [info] auth: Invalidating connection: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 21:32:49.297 [warning] credentials (sso): invalidating stored token: Session token not found or invalid
+2026-07-07 21:32:49.298 [info] SsoAccessTokenProvider: invalidate token and registration
+2026-07-07 21:32:49.306 [warning] auth: failed to logout of connection "24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91": UnauthorizedException: Session token not found or invalid
+2026-07-07 21:32:49.306 [info] SsoAccessTokenProvider: invalidate token and registration
+2026-07-07 21:32:49.318 [info] auth: Updating connection state of 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91 to invalid
+2026-07-07 21:32:49.370 [info] codewhisperer: active connection changed
+2026-07-07 21:32:49.370 [info] secondaryAuth: connectionId=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91, connectionStatus=invalid
+2026-07-07 21:32:49.370 [info] codewhisperer: connection states
+    connection isValid=false,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=true,
+    secondaryAuth isExpired=true,
+    connection isUndefined=false
+2026-07-07 21:32:49.370 [info] codewhisperer: connection changed to invalid: 24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91
+2026-07-07 21:32:49.380 [info] secondaryAuth: connectionId=24c00fe0-7cb7-4cd8-b6b0-df57c01b9e91, connectionStatus=undefined
+2026-07-07 21:32:49.380 [info] codewhisperer: connection states
+    connection isValid=true,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=false
+2026-07-07 21:32:49.418 [info] [Error - 9:32:49 PM] Notification aws/credentials/token/delete defines 0 params but received 1 arguments
+2026-07-07 21:32:49.421 [info] [Info  - 9:32:49 PM] Runtime: Deleted bearer credentials
+2026-07-07 21:32:49.494 [info] codewhisperer: active connection changed
+2026-07-07 21:32:49.494 [info] codewhisperer: connection states
+    connection isValid=false,
+    connection isValidCodewhispererCoreConnection=false,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=true
+2026-07-07 21:32:49.494 [info] codewhisperer: active connection changed
+2026-07-07 21:33:53.556 [info] selected AWS ID sign in
+2026-07-07 21:33:53.557 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to authenticating
+2026-07-07 21:33:53.557 [info] codewhisperer: connection changed to authenticating: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:33:53.566 [info] current client registration id=undefined
+    expires at undefined
+    key = c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:11.490 [error] Unable to find /home/pawan/.vscode/extensions/amazonwebservices.amazon-q-vscode-2.4.0/dist/src/auth/sso/vue/favicon.ico
+2026-07-07 21:34:14.815 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to valid
+2026-07-07 21:34:14.951 [info] codewhisperer: connection changed to valid: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:15.034 [info] codewhisperer: active connection changed
+2026-07-07 21:34:15.035 [info] secondaryAuth: connectionId=c90d7b38-151d-48a6-863c-f7fdf3dd3312, connectionStatus=valid
+2026-07-07 21:34:15.035 [info] codewhisperer: connection states
+    connection isValid=true,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=false
+2026-07-07 21:34:15.079 [info] current client registration id=Albptuhtc6wFqpKu3KC_GnVzLWVhc3QtMQ
+    expires at Mon Oct 05 2026 21:33:56 GMT+0530 (India Standard Time)
+    key = c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:15.079 [info] auth: Connection is valid: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:15.079 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to valid
+2026-07-07 21:34:15.150 [info] amazonqLsp: Adding external webview resource root: /home/pawan/.cache/aws/toolkits/language-servers/AmazonQ/1.72.0/clients
+2026-07-07 21:34:15.342 [info] [Info  - 9:34:15 PM] Runtime: Decoding encrypted credentials token
+2026-07-07 21:34:15.342 [info] [Info  - 9:34:15 PM] Decoding JWT token
+2026-07-07 21:34:15.343 [info] [Info  - 9:34:15 PM] Runtime: Storing Q credentials in bearer
+2026-07-07 21:34:15.343 [info] [Info  - 9:34:15 PM] Runtime: Successfully saved bearer credentials
+2026-07-07 21:34:15.343 [info] [Info  - 9:34:15 PM] UpdateBearerToken: {"data":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..84kHfiYM6aqU5O8g.MrL77u2TpCcUjK7EiCGDfpPODl0_IqPLtLPOR_YR66abMufUDVWfkW2QRUujsBaYE1y-kciHUm1zXUEgRTpyvJdw1xCQMwWcIci3knaxBlRXgD8RjHS4KRLrdvUlaFVRkbb71CpxnkgZV6fyngPQuel-HVo5gKafEyHxweSKbUbD_UaoJrfbzQ-OPQQaQAFXfrDsjQOh5zKbihKfF1nEM7jR0jPPCWgD8DLt_3kDgp0mA8uhOyTYgbniDyZ_K0_gihAD5QOPQQaMsMPjR-AbpMio2vhy01gfhx1Dvp2ikISIfeUM50c9iOnvK-K3-ARK1klVcX-rcvGBtyZv8t4.XdZnbFGHhu8EbsDOjWd0nw","metadata":{"sso":{"startUrl":"https://view.awsapps.com/start"}},"encrypted":true}
+2026-07-07 21:34:15.385 [warning] telemetry: invalid Metric:  "auth_addConnection" emitted with missing fields: featureId,isAggregated
+2026-07-07 21:34:15.525 [info] auth: Connection is valid: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:15.525 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to valid
+2026-07-07 21:34:16.382 [info] [Info  - 9:34:16 PM] [2026-07-07T16:04:16.382Z] lserver: abconfig: [{"feature":"KiroPromptExperiment","value":{"stringValue":"PROMPT_10"},"variation":"PROMPT_10"}]
+2026-07-07 21:34:17.527 [info] auth: Connection is valid: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:17.527 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to valid
+2026-07-07 21:34:17.730 [info] AB Testing Cohort Assignments [
+  {
+    feature: 'KiroPromptExperiment',
+    variation: 'PROMPT_10',
+    value: { stringValue: 'PROMPT_10' }
+  }
+]
+2026-07-07 21:34:17.732 [info] auth: Connection is valid: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:17.732 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to valid
+2026-07-07 21:34:18.074 [info] [Info  - 9:34:18 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:34:18.075 [info] [Info  - 9:34:18 PM] [VSCode Client]  Received {"command":"ui-is-ready"} from chat
+2026-07-07 21:34:18.076 [info] [Info  - 9:34:18 PM] [VSCode Client]  Received {"command":"aws/chat/ready"} from chat
+2026-07-07 21:34:18.076 [info] [Info  - 9:34:18 PM] [VSCode Client] "aws/chat/ready" event is received, sending chat options
+2026-07-07 21:34:18.076 [info] [Info  - 9:34:18 PM] [VSCode Client]  Received {"command":"aws/chat/tabAdd","params":{"tabId":"ol09wp"}} from chat
+2026-07-07 21:34:18.077 [info] [Info  - 9:34:18 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"ol09wp","name":"tabAdd"}} from chat
+2026-07-07 21:34:18.077 [info] [Info  - 9:34:18 PM] [VSCode Client]  Received {"command":"aws/chat/listAvailableModels","params":{"tabId":"ol09wp"}} from chat
+2026-07-07 21:34:18.079 [info] [Info  - 9:34:18 PM] [VSCode Client] Chat options flags: mcpServers=true, history=true, export=true, quickActions=[/help, /clear, /compact]
+2026-07-07 21:34:18.190 [info] [Info  - 9:34:18 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:34:18.488 [info] [Error - 9:34:18 PM] [2026-07-07T16:04:18.448Z] lserver: setpaidtier
+    request: {"statusOnly":true}
+    response: {"$metadata":{"httpStatusCode":200,"requestId":"3e93c576-4444-4b0e-8302-becc8e85e323","httpHeaders":{"date":"Tue, 07 Jul 2026 16:04:18 GMT","content-type":"application/json","content-length":"64","connection":"keep-alive","x-amzn-requestid":"3e93c576-4444-4b0e-8302-becc8e85e323","x-xss-protection":"1; mode=block","strict-transport-security":"max-age=47304000; includeSubDomains","x-frame-options":"DENY","cache-control":"no-cache","x-content-type-options":"nosniff"},"attempts":1,"totalRetryDelay":0},"status":"INACTIVE"}
+    requestId: undefined
+    httpStatusCode: undefined
+    headers: undefined
+2026-07-07 21:34:22.766 [info] [Info  - 9:34:22 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"ol09wp"}} from chat
+2026-07-07 21:34:22.769 [info] [Info  - 9:34:22 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"hellow","escapedPrompt":"hellow","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"ol09wp","context":[]}} from chat
+2026-07-07 21:34:22.771 [info] [Info  - 9:34:22 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"ol09wp","name":"addMessage"}} from chat
+2026-07-07 21:34:22.784 [info] [Info  - 9:34:22 PM] [2026-07-07T16:04:22.779Z] lserver: remote workspaceId: undefined
+2026-07-07 21:34:22.785 [info] [Info  - 9:34:22 PM] [2026-07-07T16:04:22.780Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:34:22.785 [info] [Info  - 9:34:22 PM] [2026-07-07T16:04:22.781Z] lserver: Fixing history: tabId=ol09wp
+2026-07-07 21:34:23.779 [info] [Info  - 9:34:23 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"error-message-id-530fd9e2-d734-470a-b4b1-da066ca076a1","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":402,"cwsprChatRequestLength":6,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"result":"Failed","enabled":true,"languageServerVersion":"1.72.0","requestIds":["6596eee7-4b73-4e1a-b799-1139151ad31c"],"errorMessage":"You have reached the limit.","errorCode":"QModelResponse","modelId":"auto"}
+2026-07-07 21:34:23.779 [warning] telemetry: invalid Metric: "amazonq_addMessage" emitted with result=Failed but without the `reason` property. Consider using `.run()` instead of `.emit()`, which will set these properties automatically. See https://github.com/aws/aws-toolkit-vscode/blob/master/docs/telemetry.md#guidelines
+2026-07-07 21:34:23.780 [warning] telemetry: invalid Metric:  "amazonq_addMessage" emitted with missing fields: cwsprChatConversationId,cwsprChatFullResponseLatency,cwsprChatTimeBetweenChunks,cwsprChatTimeToFirstChunk
+2026-07-07 21:34:24.120 [info] [Info  - 9:34:24 PM] [VSCode Telemetry] Emitting amazonq_messageResponseError telemetry: {"cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatProgrammingLanguage":"sql","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatResponseCode":402,"cwsprChatRequestLength":6,"cwsprChatConversationType":"AgenticChat","requestId":"6596eee7-4b73-4e1a-b799-1139151ad31c","reasonDesc":"You have reached the limit.","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","modelId":"auto"}
+2026-07-07 21:34:24.120 [info] [Error - 9:34:24 PM] [2026-07-07T16:04:24.118Z] lserver: {
+  "code": "QModelResponse",
+  "requestId": "6596eee7-4b73-4e1a-b799-1139151ad31c",
+  "name": "Error",
+  "message": "You have reached the limit.",
+  "cause": {
+    "$fault": "client",
+    "$metadata": {
+      "httpStatusCode": 402,
+      "requestId": "6596eee7-4b73-4e1a-b799-1139151ad31c",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "name": "ServiceQuotaExceededException",
+    "reason": "MONTHLY_REQUEST_COUNT"
+  }
+}
+2026-07-07 21:34:24.127 [info] [Info  - 9:34:24 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"ol09wp"}} from chat
+2026-07-07 21:34:24.129 [info] [Info  - 9:34:24 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:34:28.172 [info] [Info  - 9:34:28 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:34:28.179 [info] [Info  - 9:34:28 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:34:29.828 [info] auth: logout
+2026-07-07 21:34:29.904 [info] auth: Invalidating connection: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:31.878 [warning] credentials (sso): invalidating stored token: Session token not found or invalid
+2026-07-07 21:34:31.878 [info] SsoAccessTokenProvider: invalidate token and registration
+2026-07-07 21:34:31.885 [warning] auth: failed to logout of connection "c90d7b38-151d-48a6-863c-f7fdf3dd3312": UnauthorizedException: Session token not found or invalid
+2026-07-07 21:34:31.885 [info] SsoAccessTokenProvider: invalidate token and registration
+2026-07-07 21:34:31.892 [info] auth: Updating connection state of c90d7b38-151d-48a6-863c-f7fdf3dd3312 to invalid
+2026-07-07 21:34:31.949 [info] secondaryAuth: connectionId=c90d7b38-151d-48a6-863c-f7fdf3dd3312, connectionStatus=invalid
+2026-07-07 21:34:31.949 [info] codewhisperer: connection states
+    connection isValid=false,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=true,
+    secondaryAuth isExpired=true,
+    connection isUndefined=false
+2026-07-07 21:34:31.949 [info] codewhisperer: active connection changed
+2026-07-07 21:34:31.949 [info] codewhisperer: connection changed to invalid: c90d7b38-151d-48a6-863c-f7fdf3dd3312
+2026-07-07 21:34:31.956 [info] secondaryAuth: connectionId=c90d7b38-151d-48a6-863c-f7fdf3dd3312, connectionStatus=undefined
+2026-07-07 21:34:31.956 [info] codewhisperer: connection states
+    connection isValid=true,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=false
+2026-07-07 21:34:32.027 [info] [Error - 9:34:32 PM] Notification aws/credentials/token/delete defines 0 params but received 1 arguments
+2026-07-07 21:34:32.027 [info] [Info  - 9:34:32 PM] Runtime: Deleted bearer credentials
+2026-07-07 21:34:32.064 [info] codewhisperer: active connection changed
+2026-07-07 21:34:32.064 [info] codewhisperer: connection states
+    connection isValid=false,
+    connection isValidCodewhispererCoreConnection=false,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=true
+2026-07-07 21:34:32.064 [info] codewhisperer: active connection changed
+2026-07-07 21:36:47.058 [info] telemetry: sent batch (size=20)
+2026-07-07 21:36:47.643 [info] telemetry: sent batch (size=20)
+2026-07-07 21:36:50.457 [info] [Info  - 9:36:50 PM] [VSCode Telemetry] Emitting codewhisperer_codePercentage telemetry: {"codewhispererTotalTokens":0,"codewhispererLanguage":"sql","codewhispererSuggestedTokens":0,"codewhispererPercentage":0}
+2026-07-07 21:36:50.458 [info] [Info  - 9:36:50 PM] [2026-07-07T16:06:50.454Z] lserver: Invoking SendTelemetryEvent:CodeCoverageEvent with:
+            "acceptedCharacterCount": 0
+            "totalCharacterCount": 0
+            "addedCharacterCount": 0
+2026-07-07 21:36:51.754 [info] Refreshing indexes...
+2026-07-07 21:38:07.516 [info] selected AWS ID sign in
+2026-07-07 21:38:07.517 [info] auth: Updating connection state of 548bfed9-0cd6-48d9-9471-ff0cb773ece0 to authenticating
+2026-07-07 21:38:07.517 [info] codewhisperer: connection changed to authenticating: 548bfed9-0cd6-48d9-9471-ff0cb773ece0
+2026-07-07 21:38:07.551 [info] current client registration id=undefined
+    expires at undefined
+    key = 548bfed9-0cd6-48d9-9471-ff0cb773ece0
+2026-07-07 21:39:13.947 [warning] AuthSSOServer: Authentication is taking a long time
+2026-07-07 21:41:49.324 [info] telemetry: sent batch (size=2)
+2026-07-07 21:43:24.529 [error] ssoSetup encountered an error: Error: Failed to connect to AWS Builder ID [FailedToConnect]
+	 -> Error: Timeout token cancelled
+2026-07-07 21:43:27.272 [info] selected AWS ID sign in
+2026-07-07 21:43:27.272 [info] auth: Updating connection state of aacb149a-d437-4268-ac93-e072d6929427 to authenticating
+2026-07-07 21:43:27.273 [info] codewhisperer: connection changed to authenticating: aacb149a-d437-4268-ac93-e072d6929427
+2026-07-07 21:43:27.280 [info] current client registration id=undefined
+    expires at undefined
+    key = aacb149a-d437-4268-ac93-e072d6929427
+2026-07-07 21:44:29.155 [warning] AuthSSOServer: Authentication is taking a long time
+2026-07-07 21:46:50.063 [info] telemetry: sent batch (size=7)
+2026-07-07 21:48:44.971 [error] ssoSetup encountered an error: Error: Failed to connect to AWS Builder ID [FailedToConnect]
+	 -> Error: Timeout token cancelled
+2026-07-07 21:48:47.065 [info] selected AWS ID sign in
+2026-07-07 21:48:47.065 [info] auth: Updating connection state of c878c084-3c2b-4c3a-a9f7-55f927196a60 to authenticating
+2026-07-07 21:48:47.065 [info] codewhisperer: connection changed to authenticating: c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:48:47.067 [info] current client registration id=undefined
+    expires at undefined
+    key = c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:26.658 [error] Unable to find /home/pawan/.vscode/extensions/amazonwebservices.amazon-q-vscode-2.4.0/dist/src/auth/sso/vue/favicon.ico
+2026-07-07 21:49:29.933 [info] auth: Updating connection state of c878c084-3c2b-4c3a-a9f7-55f927196a60 to valid
+2026-07-07 21:49:29.989 [info] codewhisperer: connection changed to valid: c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:30.039 [info] codewhisperer: active connection changed
+2026-07-07 21:49:30.039 [info] secondaryAuth: connectionId=c878c084-3c2b-4c3a-a9f7-55f927196a60, connectionStatus=valid
+2026-07-07 21:49:30.039 [info] codewhisperer: connection states
+    connection isValid=true,
+    connection isValidCodewhispererCoreConnection=true,
+    connection isExpired=false,
+    secondaryAuth isExpired=false,
+    connection isUndefined=false
+2026-07-07 21:49:30.057 [info] current client registration id=GEhuDjOt3UA_jKKfBObvBHVzLWVhc3QtMQ
+    expires at Mon Oct 05 2026 21:38:10 GMT+0530 (India Standard Time)
+    key = c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:30.057 [info] auth: Connection is valid: c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:30.057 [info] auth: Updating connection state of c878c084-3c2b-4c3a-a9f7-55f927196a60 to valid
+2026-07-07 21:49:30.070 [info] [Info  - 9:49:30 PM] Runtime: Decoding encrypted credentials token
+2026-07-07 21:49:30.071 [info] [Info  - 9:49:30 PM] Decoding JWT token
+2026-07-07 21:49:30.071 [info] [Info  - 9:49:30 PM] Runtime: Storing Q credentials in bearer
+2026-07-07 21:49:30.071 [info] [Info  - 9:49:30 PM] Runtime: Successfully saved bearer credentials
+2026-07-07 21:49:30.071 [info] [Info  - 9:49:30 PM] UpdateBearerToken: {"data":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..bCpkybW7LJPSEHWt.vRbtj4WglJWIvi3egct6Cf7RjrK9W__mqmIxG4F4jP-Jr6HTPkTfkr_BasbxC5klbZtC1UI9cWoThjNWSDLx3De4tovvJaOc4QGG-oZNdRsHOranHIQJfKFjwjfSFZZ_G58qJYxJ8f6T1XeurxtY-DVpL2li9cR3jYkKEK_5RKbudN_qTqseqdKOeTvDCHyh9nM13SlSbxEoOUx1hPeoP8GpVdhAS5fnCHSTxTscmkbwRpmtxiaq7xRKQiig74qgjnxF53CyGWrThT4S0h9CjtiQUcc8qY091dMOGyu-5Gvar-4FsCjEn8JO01xfso_68xUFJy-D-vtWlmw.wQLkQiR-hRiXhgXyEad1vw","metadata":{"sso":{"startUrl":"https://view.awsapps.com/start"}},"encrypted":true}
+2026-07-07 21:49:30.106 [info] amazonqLsp: Adding external webview resource root: /home/pawan/.cache/aws/toolkits/language-servers/AmazonQ/1.72.0/clients
+2026-07-07 21:49:30.542 [info] auth: Connection is valid: c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:30.542 [info] auth: Updating connection state of c878c084-3c2b-4c3a-a9f7-55f927196a60 to valid
+2026-07-07 21:49:32.544 [info] auth: Connection is valid: c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:32.544 [info] auth: Updating connection state of c878c084-3c2b-4c3a-a9f7-55f927196a60 to valid
+2026-07-07 21:49:32.761 [info] AB Testing Cohort Assignments [
+  {
+    feature: 'KiroPromptExperiment',
+    variation: 'PROMPT_8',
+    value: { stringValue: 'PROMPT_8' }
+  }
+]
+2026-07-07 21:49:32.764 [info] auth: Connection is valid: c878c084-3c2b-4c3a-a9f7-55f927196a60
+2026-07-07 21:49:32.765 [info] auth: Updating connection state of c878c084-3c2b-4c3a-a9f7-55f927196a60 to valid
+2026-07-07 21:49:33.124 [info] [Info  - 9:49:33 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:49:33.129 [info] [Info  - 9:49:33 PM] [VSCode Client]  Received {"command":"ui-is-ready"} from chat
+2026-07-07 21:49:33.129 [info] [Info  - 9:49:33 PM] [VSCode Client]  Received {"command":"aws/chat/ready"} from chat
+2026-07-07 21:49:33.129 [info] [Info  - 9:49:33 PM] [VSCode Client] "aws/chat/ready" event is received, sending chat options
+2026-07-07 21:49:33.130 [info] [Info  - 9:49:33 PM] [VSCode Client]  Received {"command":"aws/chat/tabAdd","params":{"tabId":"9cdkgf"}} from chat
+2026-07-07 21:49:33.130 [info] [Info  - 9:49:33 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"9cdkgf","name":"tabAdd"}} from chat
+2026-07-07 21:49:33.132 [info] [Info  - 9:49:33 PM] [VSCode Client]  Received {"command":"aws/chat/listAvailableModels","params":{"tabId":"9cdkgf"}} from chat
+2026-07-07 21:49:33.135 [info] [Info  - 9:49:33 PM] [VSCode Client] Chat options flags: mcpServers=true, history=true, export=true, quickActions=[/help, /clear, /compact]
+2026-07-07 21:49:33.237 [info] [Info  - 9:49:33 PM] [2026-07-07T16:19:33.237Z] lserver: abconfig: [{"feature":"KiroPromptExperiment","value":{"stringValue":"PROMPT_8"},"variation":"PROMPT_8"}]
+2026-07-07 21:49:33.238 [info] [Info  - 9:49:33 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:49:37.809 [info] [Info  - 9:49:37 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"9cdkgf"}} from chat
+2026-07-07 21:49:37.810 [info] [Info  - 9:49:37 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"hi","escapedPrompt":"hi","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"9cdkgf","context":[]}} from chat
+2026-07-07 21:49:37.812 [info] [Info  - 9:49:37 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"9cdkgf","name":"addMessage"}} from chat
+2026-07-07 21:49:37.823 [info] [Info  - 9:49:37 PM] [2026-07-07T16:19:37.819Z] lserver: remote workspaceId: undefined
+2026-07-07 21:49:37.823 [info] [Info  - 9:49:37 PM] [2026-07-07T16:19:37.819Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:49:37.824 [info] [Info  - 9:49:37 PM] [2026-07-07T16:19:37.821Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:49:39.781 [info] [Info  - 9:49:39 PM] [2026-07-07T16:19:39.777Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "7e13ba36-bd3a-41c9-b735-bc0dcd43a7ae",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:49:40.179 [info] [Info  - 9:49:40 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"","cwsprToolUseId":"","result":"Succeeded","languageServerVersion":"1.72.0","latency":2352,"toolCallLatency":"","cwsprChatTimeToFirstChunk":1959,"cwsprChatTimeBetweenChunks":"33,200,10,150","requestId":"7e13ba36-bd3a-41c9-b735-bc0dcd43a7ae","enabled":true,"modelId":"auto"}
+2026-07-07 21:49:40.181 [info] [Info  - 9:49:40 PM] [VSCode Telemetry] Emitting amazonq_startConversation telemetry: {"cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatProgrammingLanguage":"sql","cwsprChatConversationType":"AgenticChat","credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","result":"Succeeded"}
+2026-07-07 21:49:40.181 [info] [Info  - 9:49:40 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"7e13ba36-bd3a-41c9-b735-bc0dcd43a7ae","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":1962,"cwsprChatFullResponseLatency":2355,"cwsprChatTimeBetweenChunks":[33,200,10],"cwsprChatRequestLength":2,"cwsprChatResponseLength":32,"cwsprChatConversationType":"AgenticChat","cwsprChatActiveEditorTotalCharacters":27949,"cwsprChatHasContextList":true,"cwsprChatFolderContextCount":0,"cwsprChatFileContextCount":0,"cwsprChatRuleContextCount":1,"cwsprChatPromptContextCount":0,"cwsprChatFileContextLength":0,"cwsprChatRuleContextLength":1451,"cwsprChatTotalRuleContextCount":1,"cwsprChatPromptContextLength":0,"cwsprChatFocusFileContextLength":9000,"cwsprChatCodeContextCount":0,"cwsprChatCodeContextLength":0,"cwsprChatPinnedCodeContextCount":0,"cwsprChatPinnedFileContextCount":0,"cwsprChatPinnedFolderContextCount":0,"cwsprChatPinnedPromptContextCount":0,"result":"Succeeded","enabled":true,"languageServerVersion":"1.72.0","requestIds":["7e13ba36-bd3a-41c9-b735-bc0dcd43a7ae"],"modelId":"auto"}
+2026-07-07 21:49:40.532 [info] [Info  - 9:49:40 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"9cdkgf"}} from chat
+2026-07-07 21:49:40.534 [info] [Info  - 9:49:40 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:49:47.380 [info] [Info  - 9:49:47 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:49:47.393 [info] [Info  - 9:49:47 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:49:57.174 [info] [Info  - 9:49:57 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:49:57.188 [info] [Info  - 9:49:57 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:49:57.404 [info] [Info  - 9:49:57 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:49:57.450 [info] [Info  - 9:49:57 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:49:58.731 [info] [Info  - 9:49:58 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:49:58.752 [info] [Info  - 9:49:58 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:50:03.118 [info] [Info  - 9:50:03 PM] [VSCode Client]  Received {"command":"aws/chat/tabBarAction","params":{"tabId":"9cdkgf","action":"show_logs"}} from chat
+2026-07-07 21:50:03.119 [info] [Info  - 9:50:03 PM] [VSCode Client] Received show_logs action, showing disclaimer
+2026-07-07 21:50:03.119 [info] [Info  - 9:50:03 PM] [VSCode Client] Opening logs directory
+2026-07-07 21:50:03.166 [info] [Info  - 9:50:03 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatPostMessageRejected","reason":"unknownCommand","command":"aws/chat/tabBarAction"}} from chat
+2026-07-07 21:50:03.168 [info] [Info  - 9:50:03 PM] [VSCode Telemetry] Emitting amazonq_chatPostMessageRejected telemetry: {"reason":"unknownCommand","command":"aws/chat/tabBarAction","languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:50:03.736 [info] [Info  - 9:50:03 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:50:03.751 [info] [Info  - 9:50:03 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:50:08.231 [info] [Info  - 9:50:08 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:50:08.253 [info] [Info  - 9:50:08 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:50:44.982 [info] [Info  - 9:50:44 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"9cdkgf"}} from chat
+2026-07-07 21:50:44.985 [info] [Info  - 9:50:44 PM] [VSCode Client]  Received {"command":"aws/chat/sendChatPrompt","params":{"prompt":{"prompt":"create some logs so i can past log from that fole for last work you left","escapedPrompt":"create some logs so i can past log from that fole for last work you left","context":[],"options":{"pair-programmer-mode":"true","model-selection":"auto"}},"tabId":"9cdkgf","context":[]}} from chat
+2026-07-07 21:50:44.990 [info] [Info  - 9:50:44 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"triggerType":"click","tabId":"9cdkgf","name":"addMessage"}} from chat
+2026-07-07 21:50:45.000 [info] [Info  - 9:50:45 PM] [2026-07-07T16:20:44.996Z] lserver: remote workspaceId: undefined
+2026-07-07 21:50:45.001 [info] [Info  - 9:50:45 PM] [2026-07-07T16:20:44.996Z] lserver: System Information: {"languageServerVersion":"1.72.0","clientName":"Visual Studio Code","clientVersion":"1.108.1","OS":"linux","OSVersion":"6.14.0-37-generic","ComputeEnv":"unknown","extensionVersion":"2.4.0"}
+2026-07-07 21:50:45.001 [info] [Info  - 9:50:45 PM] [2026-07-07T16:20:44.997Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:50:47.314 [info] [Info  - 9:50:47 PM] [2026-07-07T16:20:47.311Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "e76ca597-284a-4c8c-b50d-b210abe076e5",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:50:48.685 [info] [Info  - 9:50:48 PM] [2026-07-07T16:20:48.682Z] lserver: Reading directory in tree like format: /home/pawan/Desktop/education erp/Education to max depth: 2
+2026-07-07 21:50:48.731 [info] [Info  - 9:50:48 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"listDirectory","cwsprToolUseId":"tooluse_lWYEc6nbyCv91MhVXwVKjk","perfE2ELatency":47,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:50:48.731 [info] [Info  - 9:50:48 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"listDirectory","cwsprToolUseId":"tooluse_lWYEc6nbyCv91MhVXwVKjk","result":"Succeeded","languageServerVersion":"1.72.0","latency":3680,"toolCallLatency":"47","cwsprChatTimeToFirstChunk":3681,"cwsprChatTimeBetweenChunks":"","requestId":"e76ca597-284a-4c8c-b50d-b210abe076e5","enabled":true,"modelId":"auto"}
+2026-07-07 21:50:48.732 [info] [Info  - 9:50:48 PM] [2026-07-07T16:20:48.728Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:50:50.835 [info] [Info  - 9:50:50 PM] [2026-07-07T16:20:50.831Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "3574dd79-47f1-44fa-8ece-3fcb4f04f4b4",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:50:51.643 [info] [Info  - 9:50:51 PM] [2026-07-07T16:20:51.641Z] lserver: Reading file: /home/pawan/Desktop/education erp/Education/AGENTS.md
+2026-07-07 21:50:51.644 [info] [Info  - 9:50:51 PM] [2026-07-07T16:20:51.643Z] lserver: Read file: /home/pawan/Desktop/education erp/Education/AGENTS.md, size: 325
+2026-07-07 21:50:51.644 [info] [Info  - 9:50:51 PM] [2026-07-07T16:20:51.643Z] lserver: Reading file: /home/pawan/Desktop/education erp/Education/CLAUDE.md
+2026-07-07 21:50:51.646 [info] [Info  - 9:50:51 PM] [2026-07-07T16:20:51.644Z] lserver: Read file: /home/pawan/Desktop/education erp/Education/CLAUDE.md, size: 11
+2026-07-07 21:50:51.649 [info] [Info  - 9:50:51 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"fsRead","cwsprToolUseId":"tooluse_DIr8GqKjVIYUDQOVNWJLYH","perfE2ELatency":6,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:50:51.650 [info] [Info  - 9:50:51 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"fsRead","cwsprToolUseId":"tooluse_DIr8GqKjVIYUDQOVNWJLYH","result":"Succeeded","languageServerVersion":"1.72.0","latency":2910,"toolCallLatency":"6","cwsprChatTimeToFirstChunk":2910,"cwsprChatTimeBetweenChunks":"","requestId":"3574dd79-47f1-44fa-8ece-3fcb4f04f4b4","enabled":true,"modelId":"auto"}
+2026-07-07 21:50:51.651 [info] [Info  - 9:50:51 PM] [2026-07-07T16:20:51.647Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:50:53.658 [info] [Info  - 9:50:53 PM] [2026-07-07T16:20:53.657Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "86061fa1-8325-4b11-b8cd-c2650e6690de",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:50:54.053 [info] [Info  - 9:50:54 PM] [2026-07-07T16:20:54.049Z] lserver: Reading file: /home/pawan/Desktop/education erp/Education/dev_server.log
+2026-07-07 21:50:54.054 [info] [Info  - 9:50:54 PM] [2026-07-07T16:20:54.051Z] lserver: Read file: /home/pawan/Desktop/education erp/Education/dev_server.log, size: 161
+2026-07-07 21:50:54.057 [info] [Info  - 9:50:54 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"fsRead","cwsprToolUseId":"tooluse_RSXBzDaCjyTLCaNwiJKdJ1","perfE2ELatency":5,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:50:54.058 [info] [Info  - 9:50:54 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"fsRead","cwsprToolUseId":"tooluse_RSXBzDaCjyTLCaNwiJKdJ1","result":"Succeeded","languageServerVersion":"1.72.0","latency":2398,"toolCallLatency":"5","cwsprChatTimeToFirstChunk":2398,"cwsprChatTimeBetweenChunks":"","requestId":"86061fa1-8325-4b11-b8cd-c2650e6690de","enabled":true,"modelId":"auto"}
+2026-07-07 21:50:54.058 [info] [Info  - 9:50:54 PM] [2026-07-07T16:20:54.053Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:50:55.945 [info] [Info  - 9:50:55 PM] [2026-07-07T16:20:55.942Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "a5e9c753-ab87-4ecc-88d4-7fa1ff1d0fad",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:50:57.417 [info] [Info  - 9:50:57 PM] [2026-07-07T16:20:57.414Z] lserver: Reading directory in tree like format: /home/pawan/Desktop/education erp/Education/app/(dashboard) to max depth: unlimited
+2026-07-07 21:50:57.435 [info] [Info  - 9:50:57 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"listDirectory","cwsprToolUseId":"tooluse_k3Aveax0gYAP5nIX81qynD","perfE2ELatency":18,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:50:57.438 [info] [Info  - 9:50:57 PM] [2026-07-07T16:20:57.433Z] lserver: Reading directory in tree like format: /home/pawan/Desktop/education erp/Education/components to max depth: unlimited
+2026-07-07 21:50:57.449 [info] [Info  - 9:50:57 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"listDirectory","cwsprToolUseId":"tooluse_CHb3tWBetrqDZ8L3c53dPS","perfE2ELatency":12,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:50:57.454 [info] [Info  - 9:50:57 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"listDirectory,listDirectory","cwsprToolUseId":"tooluse_k3Aveax0gYAP5nIX81qynD,tooluse_CHb3tWBetrqDZ8L3c53dPS","result":"Succeeded","languageServerVersion":"1.72.0","latency":3358,"toolCallLatency":"12","cwsprChatTimeToFirstChunk":1889,"cwsprChatTimeBetweenChunks":"1,44,82,14,76,18,1235,18","requestId":"a5e9c753-ab87-4ecc-88d4-7fa1ff1d0fad","enabled":true,"modelId":"auto"}
+2026-07-07 21:50:57.455 [info] [Info  - 9:50:57 PM] [2026-07-07T16:20:57.445Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:50:59.533 [info] [Info  - 9:50:59 PM] [2026-07-07T16:20:59.531Z] lserver: generateAssistantResponse/SendMessage ResponseMetadata: {
+  "httpStatusCode": 200,
+  "requestId": "8eed4ead-fafd-4705-b320-491a86e47d8d",
+  "attempts": 1,
+  "totalRetryDelay": 0
+}
+2026-07-07 21:51:00.762 [info] [Info  - 9:51:00 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"GeneratedCommand","result":"Succeeded","enabled":true}
+2026-07-07 21:51:07.379 [info] [Info  - 9:51:07 PM] [VSCode Client]  Received {"command":"aws/chat/buttonClick","params":{"tabId":"9cdkgf","messageId":"tooluse_fHebYvo2zLGNbyIZYBhynJ","buttonId":"run-shell-command"}} from chat
+2026-07-07 21:51:07.409 [info] [Info  - 9:51:07 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"RunCommand","result":"Succeeded","enabled":true}
+2026-07-07 21:51:07.414 [info] [Info  - 9:51:07 PM] [2026-07-07T16:21:07.384Z] lserver: Command: (not started) [sh -c command -v cd]
+2026-07-07 21:51:07.419 [info] [Info  - 9:51:07 PM] [2026-07-07T16:21:07.403Z] lserver: Invoking /bin/bash command: "cd "/home/pawan/Desktop/education erp/Education" && git log --oneline -20 2>/dev/null || echo "No git history"" in cwd: "/home/pawan/Desktop/education erp/Education"
+2026-07-07 21:51:07.419 [info] [Info  - 9:51:07 PM] [2026-07-07T16:21:07.403Z] lserver: Command: (not started) [/bin/bash -c cd "/home/pawan/Desktop/education erp/Education" && git log --oneline -20 2>/dev/null || echo "No git history"]
+2026-07-07 21:51:07.448 [info] [Info  - 9:51:07 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"cd"}
+2026-07-07 21:51:07.449 [info] [Info  - 9:51:07 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"git"}
+2026-07-07 21:51:07.451 [info] [Info  - 9:51:07 PM] [VSCode Telemetry] Emitting amazonq_bashCommand telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded","command":"echo"}
+2026-07-07 21:51:07.451 [info] [Info  - 9:51:07 PM] [VSCode Telemetry] Emitting amazonq_toolUseSuggested telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_fHebYvo2zLGNbyIZYBhynJ","perfE2ELatency":6685,"result":"Succeeded","languageServerVersion":"1.72.0","enabled":true}
+2026-07-07 21:51:07.452 [info] [Info  - 9:51:07 PM] [VSCode Telemetry] Emitting amazonq_invokeLLM telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprToolName":"executeBash","cwsprToolUseId":"tooluse_fHebYvo2zLGNbyIZYBhynJ","result":"Succeeded","languageServerVersion":"1.72.0","latency":3309,"toolCallLatency":"6685","cwsprChatTimeToFirstChunk":3309,"cwsprChatTimeBetweenChunks":"","requestId":"8eed4ead-fafd-4705-b320-491a86e47d8d","enabled":true,"modelId":"auto"}
+2026-07-07 21:51:07.453 [info] [Info  - 9:51:07 PM] [2026-07-07T16:21:07.444Z] lserver: Fixing history: tabId=9cdkgf
+2026-07-07 21:51:09.437 [info] [Info  - 9:51:09 PM] [VSCode Client]  Received {"command":"stopChatResponse","params":{"tabId":"9cdkgf"}} from chat
+2026-07-07 21:51:09.453 [info] [Info  - 9:51:09 PM] [VSCode Telemetry] Emitting amazonq_interactWithAgenticChat telemetry: {"cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatConversationType":"AgenticChatWithToolUse","credentialStartUrl":"https://view.awsapps.com/start","cwsprAgenticChatInteractionType":"StopChat","result":"Succeeded","enabled":true}
+2026-07-07 21:51:09.454 [info] [Info  - 9:51:09 PM] [VSCode Telemetry] Emitting amazonq_addMessage telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","cwsprChatConversationId":"dd063393-7162-4328-91b0-e39021a747ea","cwsprChatHasCodeSnippet":true,"cwsprChatTriggerInteraction":"click","cwsprChatMessageId":"8eed4ead-fafd-4705-b320-491a86e47d8d","cwsprChatProgrammingLanguage":"sql","cwsprChatResponseCode":200,"cwsprChatSourceLinkCount":0,"cwsprChatReferencesCount":0,"cwsprChatFollowUpCount":0,"cwsprChatTimeToFirstChunk":2317,"cwsprChatFullResponseLatency":15760,"cwsprChatTimeBetweenChunks":[1,522,1,1,1,2,1,747,1,65,1783441250832,2,478,1,3,1,1,6,41,1,3,6,5,1,5,6,1,6,5,226,1783441253657,1,321,33,1,1,5,4,1783441255943,1,44,82,14,76,18,246,593,5,1,1,4,1,1,8,285,51,1,4,1,5,1783441259532,547,3,1,4,6,1,31,1,130,3,1,1,341,26,34,5,18,5,1,5,6,6,7,35],"cwsprChatRequestLength":72,"cwsprChatResponseLength":0,"cwsprChatConversationType":"AgenticChatWithToolUse","cwsprChatActiveEditorTotalCharacters":27949,"result":"Cancelled","enabled":true,"languageServerVersion":"1.72.0","requestIds":["e76ca597-284a-4c8c-b50d-b210abe076e5","3574dd79-47f1-44fa-8ece-3fcb4f04f4b4","86061fa1-8325-4b11-b8cd-c2650e6690de","a5e9c753-ab87-4ecc-88d4-7fa1ff1d0fad","8eed4ead-fafd-4705-b320-491a86e47d8d"],"modelId":"auto"}
+2026-07-07 21:51:09.487 [info] [Info  - 9:51:09 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatMessageRendered","tabId":"9cdkgf"}} from chat
+2026-07-07 21:51:09.489 [info] [Info  - 9:51:09 PM] [VSCode Telemetry] Emitting amazonq_chatMessageRendered telemetry: {"languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:51:13.052 [info] [Info  - 9:51:13 PM] [VSCode Client]  Received {"command":"aws/chat/tabBarAction","params":{"tabId":"9cdkgf","action":"show_logs"}} from chat
+2026-07-07 21:51:13.052 [info] [Info  - 9:51:13 PM] [VSCode Client] Received show_logs action, showing disclaimer
+2026-07-07 21:51:13.053 [info] [Info  - 9:51:13 PM] [VSCode Client] Opening logs directory
+2026-07-07 21:51:13.091 [info] [Info  - 9:51:13 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"chatPostMessageRejected","reason":"unknownCommand","command":"aws/chat/tabBarAction"}} from chat
+2026-07-07 21:51:13.094 [info] [Info  - 9:51:13 PM] [VSCode Telemetry] Emitting amazonq_chatPostMessageRejected telemetry: {"reason":"unknownCommand","command":"aws/chat/tabBarAction","languageServerVersion":"1.72.0","credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:51:13.717 [info] [Info  - 9:51:13 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:51:13.733 [info] [Info  - 9:51:13 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:51:17.422 [info] [Info  - 9:51:17 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"enterFocus"}} from chat
+2026-07-07 21:51:17.437 [info] [Info  - 9:51:17 PM] [VSCode Telemetry] Emitting amazonq_enterFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
+2026-07-07 21:51:23.217 [info] [Info  - 9:51:23 PM] [VSCode Client]  Received {"command":"telemetry/event","params":{"name":"exitFocus"}} from chat
+2026-07-07 21:51:23.243 [info] [Info  - 9:51:23 PM] [VSCode Telemetry] Emitting amazonq_exitFocusChat telemetry: {"credentialStartUrl":"https://view.awsapps.com/start","result":"Succeeded"}
